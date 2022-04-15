@@ -1,2 +1,2 @@
-# apecron-2-0
-New site for Apecron
+# Apecron Official Website
+Redesign of Apecron Website
