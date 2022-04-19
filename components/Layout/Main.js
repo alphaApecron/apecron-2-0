@@ -9,14 +9,6 @@ const isDarkMode = true;
 
 // Main app
 const Main = ({ children }) => {
-	// Add class to the body
-	useEffect(() => {
-		if (isDarkMode) {
-			document.body.classList.add('dark-mode');
-		}
-		document.body.classList.add('body');
-	});
-
 	return (
 		<div className='content'>
 			<Head>

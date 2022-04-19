@@ -7,7 +7,7 @@ const Navigation = () => {
 	return (
 		<>
 			{/* <Grid item xs={8} display={{ xs: 'flex', md: 'none' }}></Grid> */}
-			<Grid item xs={8}>
+			<Grid item xs={6} md={6}>
 				<DesktopNav />
 			</Grid>
 		</>
