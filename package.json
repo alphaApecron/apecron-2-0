@@ -13,10 +13,15 @@
     "format-scripts": "prettier-eslint --write 'src/**/*.js'"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^1.1.7",
+    "@chakra-ui/react": "^1.8.8",
+    "@chakra-ui/theme-tools": "^1.3.6",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@fontsource/roboto": "^4.5.5",
+    "@mui/icons-material": "^5.6.1",
     "@mui/material": "^5.6.1",
+    "framer-motion": "^6.3.0",
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0",
@@ -30,6 +35,7 @@
     "prettier-eslint": "^13.0.0",
     "prettier-eslint-cli": "^5.0.1",
     "prettier-stylelint": "^0.4.2",
+    "sass": "^1.50.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^25.0.0"
   }
