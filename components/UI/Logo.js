@@ -13,7 +13,7 @@ const Logo = () => (
 					src={logo}
 					width='215'
 					height='65'
-					alt='Apecron - Fastest and Secure Trading Platform for Cronos'
+					alt='Apecron - Fastest and Most Secure Trading Platform for Cronos'
 				/>
 			</Link>
 		</Grid>

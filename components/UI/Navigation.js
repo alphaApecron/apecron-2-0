@@ -1,8 +1,7 @@
-import { Container, Grid } from '@mui/material';
-import Link from 'next/link';
+import { Container, Grid, Link, Box } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { styled } from '@mui/system';
-
+const preventDefault = (event) => event.preventDefault();
 const Navigation = () => {
 	return (
 		<>
@@ -15,7 +14,38 @@ const Navigation = () => {
 };
 
 const DesktopNav = () => {
-	return <>Test</>;
+	return (
+		<>
+			<Box
+				sx={{
+					display: 'flex',
+					flexWrap: 'wrap',
+					justifyContent: 'center',
+					typography: 'body1',
+					'& > :not(style) + :not(style)': {
+						ml: 2,
+					},
+				}}
+				onClick={preventDefault}
+			>
+				<Link href='#' underline='none'>
+					About
+				</Link>
+				<Link href='#' underline='none'>
+					Platform
+				</Link>
+				<Link href='#' underline='none'>
+					Launchpad + Locker
+				</Link>
+				<Link href='#' underline='none'>
+					Team
+				</Link>
+				<Link href='#' underline='none'>
+					Contact
+				</Link>
+			</Box>
+		</>
+	);
 };
 
 const DesktopSubNav = ({ label, href, subLabel }) => {

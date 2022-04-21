@@ -35,3 +35,43 @@ p,
 span {
 	color: #fff;
 }
+
+// Buttons
+
+.btn-primary {
+	position: relative;
+	background: rgb(26, 130, 255);
+	background: linear-gradient(
+		325deg,
+		rgba(26, 130, 255, 0.75) 0%,
+		rgba(105, 173, 255, 1) 100%
+	);
+	z-index: 1;
+	padding: 0.75rem 1.875rem;
+	color: #fff;
+
+	&::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		color: #fff;
+		padding: 0.75rem 1.875rem;
+		background: linear-gradient(
+			325deg,
+			rgba(26, 130, 255, 0.5) 0%,
+			rgba(105, 173, 255, 1) 100%
+		);
+		transition: opacity 0.5s linear;
+		z-index: -1; /* We'll come back to this */
+		opacity: 0;
+	}
+
+	&:hover {
+		&::before {
+			opacity: 1;
+		}
+	}
+}

@@ -4,12 +4,14 @@ import { styled } from '@mui/system';
 
 import Logo from './Logo';
 import Navigation from './Navigation';
+import styles from './Layout.module.scss';
 
 const Header = () => {
 	return (
 		<>
 			<Grid
 				container
+				className={styles.header}
 				spacing={2}
 				columns={16}
 				maxWidth='false'

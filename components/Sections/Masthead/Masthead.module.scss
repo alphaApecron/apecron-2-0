@@ -1,2 +1,14 @@
+.masthead-wrapper {
+	background-image: url('/images/site/hero-image.png');
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
 .masthead {
+	h2 {
+		margin-bottom: 0.938rem;
+	}
+	p {
+		margin-bottom: 2rem;
+	}
 }
