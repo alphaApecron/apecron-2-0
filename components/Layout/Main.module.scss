@@ -1,6 +1,10 @@
 .main {
 	display: flex;
 	height: calc(100vh - 64px);
+	background-image: url('/images/site/hero-image.png');
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
 }
 
 .main > section {

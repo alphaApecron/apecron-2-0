@@ -1,12 +1,11 @@
 /* CSS Custom Properties */
 body {
-	--background: #0d0d2b;
+	--background: #010007;
 	&.dark-mode {
 		--is-darkMode: true;
-		--background: #0d0d2b;
+		--background: #010007;
 	}
 	background: var(--background);
-	background: radial-gradient(37.88% 44.64% at 84.03% -4.47%, rgba(255, 0, 184, 0.335) 0%, rgba(0, 0, 0, 0.5) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(41.18% 55.81% at 26.53% -14.35%, #0066FF 0%, #0D0D2B 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
 
 html,
@@ -26,6 +25,13 @@ a {
 	box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
 	color: #fff;
 }
