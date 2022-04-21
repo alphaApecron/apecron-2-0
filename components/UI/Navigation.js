@@ -1,12 +1,27 @@
-import { Container, Grid, Link, Box } from '@mui/material';
+import {
+	Grid,
+	Link,
+	Box,
+	List,
+	ListItem,
+	ListItemBVutton,
+} from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { styled } from '@mui/system';
+import styles from './Layout.module.scss';
 const preventDefault = (event) => event.preventDefault();
 const Navigation = () => {
 	return (
 		<>
 			{/* <Grid item xs={8} display={{ xs: 'flex', md: 'none' }}></Grid> */}
-			<Grid item xs={6} md={6}>
+			<Grid
+				display='flex'
+				justifyContent='flex-end'
+				alignItems='center'
+				item
+				xs={6}
+				md={6}
+			>
 				<DesktopNav />
 			</Grid>
 		</>
@@ -17,32 +32,63 @@ const DesktopNav = () => {
 	return (
 		<>
 			<Box
+				container
+				direction='row'
+				justifyContent='flex-end'
+				alignItems='center'
+				className={styles.navigation}
+				component='nav'
+				ariaLabel='Primary Navigation'
 				sx={{
-					display: 'flex',
-					flexWrap: 'wrap',
-					justifyContent: 'center',
 					typography: 'body1',
-					'& > :not(style) + :not(style)': {
-						ml: 2,
-					},
 				}}
 				onClick={preventDefault}
 			>
-				<Link href='#' underline='none'>
-					About
-				</Link>
-				<Link href='#' underline='none'>
-					Platform
-				</Link>
-				<Link href='#' underline='none'>
-					Launchpad + Locker
-				</Link>
-				<Link href='#' underline='none'>
-					Team
-				</Link>
-				<Link href='#' underline='none'>
-					Contact
-				</Link>
+				<Box className={styles['nav-item']} display='inline-block'>
+					<Link href='#' underline='none'>
+						About
+					</Link>
+				</Box>
+
+				<Box
+					className={styles['nav-item']}
+					display='inline-block'
+					ml='1.25rem'
+				>
+					<Link href='#' underline='none'>
+						Platform
+					</Link>
+				</Box>
+
+				<Box
+					className={styles['nav-item']}
+					display='inline-block'
+					ml='1.25rem'
+				>
+					<Link href='#' underline='none'>
+						Launchpad + Locker
+					</Link>
+				</Box>
+
+				<Box
+					className={styles['nav-item']}
+					display='inline-block'
+					ml='1.25rem'
+				>
+					<Link href='#' underline='none'>
+						Team
+					</Link>
+				</Box>
+
+				<Box
+					className={styles['nav-item']}
+					display='inline-block'
+					ml='1.25rem'
+				>
+					<Link href='#' underline='none'>
+						Contact
+					</Link>
+				</Box>
 			</Box>
 		</>
 	);

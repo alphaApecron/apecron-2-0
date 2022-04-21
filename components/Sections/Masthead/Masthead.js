@@ -52,7 +52,7 @@ const Masthead = () => {
 								}}
 								onClick={preventDefault}
 							>
-								<Tooltip title='Launching' placement='top'>
+								<Tooltip title='Launching Soon' placement='top'>
 									<Button
 										className='btn-primary'
 										variant='outlined'
@@ -62,7 +62,20 @@ const Masthead = () => {
 									</Button>
 								</Tooltip>
 
-								<Button variant='outlined' href='#'>
+								<Button
+									variant='outlined'
+									href='#'
+									sx={{
+										color: '#fff',
+										borderColor: '#fff',
+										transition: 'all 0.3s ease',
+										':hover': {
+											color: 'rgba(255,255,255,0.7)',
+											borderColor:
+												'rgba(255,255,255,0.7)',
+										},
+									}}
+								>
 									Download Whitepaper
 								</Button>
 							</Box>
