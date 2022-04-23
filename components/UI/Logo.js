@@ -8,7 +8,15 @@ import React from 'react';
 const Logo = () => (
 	<>
 		<Grid item xs={10} md={10}>
-			<Link href='/'>
+			<Link
+				href='/'
+				sx={{
+					transition: 'opacity 0.3s ease',
+					':hover': {
+						opacity: '0.8',
+					},
+				}}
+			>
 				<Image
 					src={logo}
 					width='215'

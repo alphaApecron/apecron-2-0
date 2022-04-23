@@ -16,18 +16,20 @@ const Masthead = () => {
 	return (
 		<>
 			<Box className={styles['masthead-wrapper']} width='100%'>
-				<Container maxWidth='md'>
+				<Container
+					maxWidth='md'
+					sx={{
+						display: 'flex',
+						flexDirection: 'column',
+						justifyContent: 'center',
+						height: '100%',
+					}}
+				>
 					<Grid
 						className={styles.masthead}
 						container
 						spacing={2}
 						columns={16}
-						direction='column'
-						justifyContent='center'
-						alignItems='center'
-						sx={{
-							padding: '150px 0px 40px',
-						}}
 					>
 						<Box xs={16} md={16} textAlign='center'>
 							<Typography variant='h2' component='h2'>
