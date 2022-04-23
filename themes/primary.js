@@ -9,6 +9,12 @@ const ApecronThemeDefault = createTheme({
 			fontWeight: 700,
 			fontSize: '4rem',
 		},
+		h3: {
+			fontWeight: 700,
+		},
+		h4: {
+			fontWeight: 700,
+		},
 		p: {
 			fontSize: '1.25rem',
 			fontWeight: 400,
