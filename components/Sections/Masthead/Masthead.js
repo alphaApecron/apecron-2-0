@@ -33,13 +33,11 @@ const Masthead = () => {
 					>
 						<Box xs={16} md={16} textAlign='center'>
 							<Typography variant='h2' component='h2'>
-								Fastest & secure trading platform for Cronos
+								The Future Of DEX on Cronos
 							</Typography>
 							<Box sx={{ padding: '0 100px' }}>
 								<Typography variant='p' component='p'>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Minus animi impedit
-									suscipit architecto, odio inventore nostrum.
+									World-class DeFi portfolio tracking and trade management simplied with a secure launchpad for projects and liquidity locker and more!
 								</Typography>
 							</Box>
 							<Box
