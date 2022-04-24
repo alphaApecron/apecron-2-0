@@ -13,6 +13,9 @@ import Image from 'next/image';
 
 //Icons
 import PortfolioImage from '../../../public/images/graphics/portfolio-image-illustration.svg';
+import DevIcon from '../../../public/images/icons/about-dev-up-arrow.svg';
+import MarketingIcon from '../../../public/images/icons/about-wallet.svg';
+import LPIcon from '../../../public/images/icons/about-filter.svg';
 
 //Styles
 import styles from './About.module.scss';
@@ -22,7 +25,7 @@ const About = () => {
 	return (
 		<>
 			<Box
-				className={styles['lead-wrapper']}
+				className={styles['about-wrapper']}
 				width='100%'
 				sx={{
 					p: 8,
@@ -31,18 +34,18 @@ const About = () => {
 			>
 				<Container maxWidth='lg'>
 					<Grid
-						className={styles.About}
+						className={styles.about}
 						container
 						spacing={4}
 						columns={12}
 						direction='row'
 						justifyContent='center'
-						alignItems='flex-start'
+						alignItems='center'
 					>
 						<Grid
 							item
 							className={styles['leads-item']}
-							xs={6}
+							xs={7}
 							spacing={2}
 							display='flex'
 							flexDirection='row'
@@ -56,19 +59,21 @@ const About = () => {
 								/>
 							</Grid>
 						</Grid>
+
+						{/* About Content */}
 						<Grid
 							item
-							className={styles['leads-item']}
-							xs={6}
+							className={styles['about-overview']}
+							xs={5}
 							spacing={2}
-							display='flex'
+							display='flex-wrap'
 							flexDirection='row'
 						>
 							<Grid item>
-								<Typography variant='h4' component='h3' mb={2}>
+								<Typography variant='h4' component='h3' mb={1.5}>
 									About Apecron
 								</Typography>
-								<Typography variant='p' component='p' fontSize={18} lineHeight={1.5} mb={3}>
+								<Typography variant='p' component='p' fontSize={16} lineHeight={1.2} mb={3}>
 									Apecron is a revolutionary world-class DeFi ecosystem designed to bring the best trading and portfolio tracking platform, safe and secure launchpad, liquidity locker, yield farming / staking, and much more.
 								</Typography>
 								<Typography 
@@ -78,12 +83,108 @@ const About = () => {
 									lineHeight={1.5}
 									sx={{
 										fontWeight: '100',
+										marginBottom: 2
 									}}
 								>
 									Low tax to give you more for your money!
 								</Typography>
 							</Grid>
+							
+							{/* Items List */}
+							<Grid
+								className={styles['about-items-list']}
+								container
+								spacing={4}
+								columns={12}
+								direction='column'
+								justifyContent='center'
+								alignItems='center'
+							>
+								<Grid
+									item
+									className={styles['about-item']}
+									pt={0}
+									mt={0}
+									xs={4}
+									display='flex'
+									flexDirection='row'
+								>
+									<Grid item xs='auto' mr={2.5} className={styles['about-icon']}>
+										<Image
+											src={DevIcon}
+											width='60'
+											height='60'
+											alt='2% of transaction fee goes to development'
+										/>
+									</Grid>
+									<Grid item xs={8}>
+										<Typography variant='h4' component='h3' fontSize={18} mb={0.5}>
+											2% for Development
+										</Typography>
+										<Typography variant='p' component='p' fontSize={16}>
+											This helps cover development, server costs, maintenance and more.
+										</Typography>
+									</Grid>
+								</Grid>
+
+								<Grid
+									item
+									className={styles['about-item']}
+									pt={0}
+									mt={0}
+									xs={4}
+									display='flex'
+									flexDirection='row'
+								>
+									<Grid item xs='auto' mr={2.5} className={styles['about-icon']}>
+										<Image
+											src={MarketingIcon}
+											width='60'
+											height='60'
+											alt='2% of transaction fee goes to marketing'
+										/>
+									</Grid>
+									<Grid item xs={8}>
+										<Typography variant='h4' component='h3' fontSize={18} mb={0.5}>
+											2% for Marketing
+										</Typography>
+										<Typography variant='p' component='p' fontSize={16}>
+											To further exand and reach more users, 2% is set aside for marketing efforts.
+										</Typography>
+									</Grid>
+								</Grid>
+
+								<Grid
+									item
+									className={styles['about-item']}
+									pt={0}
+									mt={0}
+									xs={4}
+									display='flex'
+									flexDirection='row'
+								>
+									<Grid item xs='auto' mr={2.5} className={styles['about-icon']}>
+										<Image
+											src={LPIcon}
+											width='60'
+											height='60'
+											alt='5% of transaction fee goes to liquidity'
+										/>
+									</Grid>
+									<Grid item xs={8}>
+										<Typography variant='h4' component='h3' fontSize={18} mb={0.5}>
+											5% for Liquidity
+										</Typography>
+										<Typography variant='p' component='p' fontSize={16}>
+											Each transaction adds 5% to our liquidity thus creating more stability and longevity for the project.
+										</Typography>
+									</Grid>
+								</Grid>
+
+							</Grid>		
+
 						</Grid>
+						
 					</Grid>
 				</Container>
 			</Box>
