@@ -9,6 +9,8 @@ import About from '../components/Sections/About/About';
 import Platform from '../components/Sections/Platform/Platform';
 import Security from '../components/Sections/Security/Security';
 import Launchpad from '../components/Sections/Launchpad/Launchpad';
+import Locker from '../components/Sections/Locker/Locker';
+import Footer from '../components/UI/Footer';
 
 export default function Home() {
 	return (
@@ -19,6 +21,8 @@ export default function Home() {
 			<Platform />
 			<Security />
 			<Launchpad />
+			<Locker />
+			<Footer />
 		</>
 	);
 }
