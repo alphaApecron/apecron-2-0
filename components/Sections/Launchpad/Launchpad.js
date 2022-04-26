@@ -12,25 +12,44 @@ import React from 'react';
 import Image from 'next/image';
 
 //Icons
-import SecurityImage from '../../../public/images/graphics/platform-security.svg';
+import LaunchpadImage from '../../../public/images/graphics/launchpad-icon-image.svg';
+import LaunchpadHandshake from '../../../public/images/icons/launchpad-icon-handshake.svg';
+import LaunchpadIntegration from '../../../public/images/icons/launchpad-icon-integration.svg';
 
 //Styles
-import styles from './Security.module.scss';
-const Platform = () => {
+import styles from './Launchpad.module.scss';
+const Launchpad = () => {
 	const preventDefault = (event) => event.preventDefault();
 
 	return (
 		<>
 			<Box
-				className={styles['security-wrapper']}
+				className={styles['launchpad-wrapper']}
 				width='100%'
 				sx={{
 					p: 8,
 				}}
 			>
 				<Container maxWidth='lg'>
+					{/* Launchpad Leading Header */}
+					<Box
+						textAlign='center'
+						className={styles['launchpad-header']}
+						pb={8}
+					>
+						<Typography
+							variant='h2'
+							component='h3'
+							color='#010007'
+							fontWeight='300'
+						>
+							Core Ecosystem
+						</Typography>
+					</Box>
+					{/* End: Launchpad Leading Header */}
+
 					<Grid
-						className={styles.security}
+						className={styles.launchpad}
 						container
 						spacing={8}
 						columns={12}
@@ -38,10 +57,161 @@ const Platform = () => {
 						justifyContent='space-between'
 						alignItems='flex-start'
 					>
-						{/* Security Image*/}
+						{/* Launchpad Highlights */}
 						<Grid
 							item
-							className={styles['platform-image']}
+							className={styles['launchpad-highlights']}
+							spacing={10}
+							direction='column'
+							justifyContent='center'
+							alignItems='center'
+							xs={6}
+						>
+							<Typography
+								variant='h4'
+								component='h3'
+								fontSize={30}
+								mt={2}
+								mb={3}
+								color='#010007'
+							>
+								The Launchpad
+							</Typography>
+							<Typography
+								variant='p'
+								component='p'
+								fontSize={18}
+								mb={3}
+								lineHeight={1.5}
+							>
+								As part of our core ecosystem, we are
+								establishing a safe and trusted launchpad that
+								will provide fully vetted projects the ability
+								to partner with us and launch on our platform
+								while benefiting Apecron holders thru exclusive
+								airdrops and limited pre-access for
+								participating in launches. The launchpad is
+								designed to help raise capital to kick start
+								your project!
+							</Typography>
+
+							{/* Launchpad Feature Item*/}
+							<Grid
+								item
+								className={styles['launchpad-item']}
+								pt={0}
+								mt={4}
+								mb={4}
+								xs={12}
+								display='flex'
+								flexDirection='row'
+							>
+								<Grid
+									item
+									xs='auto'
+									mr={2.5}
+									className={styles['launchpad-icon']}
+								>
+									<Image
+										src={LaunchpadHandshake}
+										width='60'
+										alt='Apecron works on any device: desktop, tablet or mobile.'
+									/>
+								</Grid>
+								<Grid item width='100%'>
+									<Typography
+										variant='h4'
+										component='h3'
+										fontSize={18}
+										mb={1}
+										color='#010007'
+									>
+										Partnership program
+									</Typography>
+									<Typography
+										variant='p'
+										component='p'
+										fontSize={16}
+									>
+										We pride ourselves in bringing the best
+										secure projects to our platform and
+										network. We fully vet all projects
+										launched on our platform and establish
+										clear guidelines for acceptance.
+									</Typography>
+								</Grid>
+							</Grid>
+							{/* End: Launchpad Feature Item*/}
+
+							{/* Launchpad Feature Item*/}
+							<Grid
+								item
+								className={styles['launchpad-item']}
+								pt={0}
+								mt={4}
+								mb={4}
+								xs={12}
+								display='flex'
+								flexDirection='row'
+							>
+								<Grid
+									item
+									xs='auto'
+									mr={2.5}
+									className={styles['launchpad-icon']}
+								>
+									<Image
+										src={LaunchpadIntegration}
+										width='60'
+										alt='Apecron works on any device: desktop, tablet or mobile.'
+									/>
+								</Grid>
+								<Grid item width='100%'>
+									<Typography
+										variant='h4'
+										component='h3'
+										fontSize={18}
+										mb={1}
+										color='#010007'
+									>
+										Integrated with our platform
+									</Typography>
+									<Typography
+										variant='p'
+										component='p'
+										fontSize={16}
+									>
+										We deliver new projects to the Apecron
+										platform exclusively before they are
+										available anywhere else! Apecron holders
+										will have pre-access to research and
+										dive in on new gems while feeling more
+										confidence in their investment all in
+										ample time so they don't miss out on the
+										ride!
+									</Typography>
+								</Grid>
+							</Grid>
+							{/* End: Launchpad Feature Item*/}
+
+							<Box mt={4} onClick={preventDefault}>
+								<Tooltip title='Launching Soon' placement='top'>
+									<Button
+										className='btn-primary'
+										variant='outlined'
+										href='#'
+									>
+										Go to Launchpad
+									</Button>
+								</Tooltip>
+							</Box>
+						</Grid>
+						{/* End: Launchpad Highlights */}
+
+						{/* Launchpad Image*/}
+						<Grid
+							item
+							className={styles['launchpad-image']}
 							spacing={2}
 							direction='column'
 							justifyContent='flex-end'
@@ -49,48 +219,11 @@ const Platform = () => {
 							xs={6}
 						>
 							<Image
-								src={SecurityImage}
-								alt='Built-in Enterprise Security and Fast Performance'
+								src={LaunchpadImage}
+								alt='The Apecron launchpad will feature trusted partners and projects fully vetted and establish a safe platform for holders'
 							/>
 						</Grid>
-						{/* End: Security Image*/}
-
-						{/* Security Highlights */}
-						<Grid
-							item
-							className={styles['security-highlights']}
-							spacing={10}
-							direction='column'
-							justifyContent='center'
-							alignItems='center'
-							xs={6}
-						>
-							<Typography variant='h4' component='h3' fontSize={30} mt={2} mb={3}>
-								Built-in Enterprise Security and Fast Performance
-							</Typography>
-							<Typography variant='p' component='p' fontSize={18} mb={3} lineHeight={1.5}>
-								We provide enterprise level security to ensure your interaction with our apps are safe. In addition, we are delivering robust applications that are built for speed utilizing the latest tech and industry standards.
-							</Typography>
-							<Typography variant='p' component='p' fontSize={18} lineHeight={1.5}>
-								You know you will get the best experience when you are using Apecron and our ecosystem. Best part is, our ecosystem all works seamlessly together and creates uniformity in our design, cross-platform, and core functionality. 
-							 	From a fast website to advanced security measures, Apecron strives to deliver the best user experience mixed with enterprise level security and performance!
-							</Typography>
-							<Box
-								mt={4}
-								onClick={preventDefault}
-							>
-								<Tooltip title='Launching Soon' placement='top'>
-									<Button
-										className='btn-primary'
-										variant='outlined'
-										href='#'
-									>
-										Launch App
-									</Button>
-								</Tooltip>
-							</Box>
-						</Grid>
-						{/* End: Security Highlights */}
+						{/* End: Launchpad Image*/}
 					</Grid>
 				</Container>
 			</Box>
@@ -98,4 +231,4 @@ const Platform = () => {
 	);
 };
 
-export default Platform;
+export default Launchpad;
