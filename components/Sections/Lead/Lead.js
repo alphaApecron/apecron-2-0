@@ -28,7 +28,8 @@ const Lead = () => {
 				className={styles['lead-wrapper']}
 				width='100%'
 				sx={{
-					p: 8,
+					px: { xs: 2, md: 8 },
+					py: { xs: 4, md: 8 },
 					flexGrow: 1,
 				}}
 			>
@@ -36,19 +37,20 @@ const Lead = () => {
 					<Grid
 						className={styles.lead}
 						container
-						spacing={4}
+						spacing={{ xs: 1, md: 4 }}
 						columns={12}
-						direction='row'
+						direction={{ xs: 'column', md: 'row' }}
 						justifyContent='center'
-						alignItems='center'
+						alignItems={{ xs: 'center', md: 'center' }}
 					>
 						<Grid
 							item
 							className={styles['leads-item']}
 							xs={4}
-							spacing={2}
+							spacing={{ xs: 1, md: 2 }}
 							display='flex'
 							flexDirection='row'
+							mb={{ xs: 3, sm: 2, md: 0 }}
 						>
 							<Grid item xs='auto' mr={2}>
 								<Image
@@ -75,6 +77,7 @@ const Lead = () => {
 							spacing={2}
 							display='flex'
 							flexDirection='row'
+							mb={{ xs: 3, sm: 2, md: 0 }}
 						>
 							<Grid item xs='auto' mr={2}>
 								<Image

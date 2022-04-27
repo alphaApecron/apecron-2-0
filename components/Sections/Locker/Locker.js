@@ -27,7 +27,8 @@ const Locker = () => {
 				className={styles['locker-wrapper']}
 				width='100%'
 				sx={{
-					p: 8,
+					px: { xs: 2, md: 8 },
+					py: { xs: 4, md: 8 },
 					borderTop: '1px solid rgba(0,0,0,0.1)',
 				}}
 			>
@@ -35,9 +36,9 @@ const Locker = () => {
 					<Grid
 						className={styles.locker}
 						container
-						spacing={8}
+						spacing={{ xs: 2, md: 8 }}
 						columns={12}
-						direction='row'
+						direction={{ xs: 'column-reverse', md: 'row' }}
 						justifyContent='space-between'
 						alignItems='flex-start'
 					>

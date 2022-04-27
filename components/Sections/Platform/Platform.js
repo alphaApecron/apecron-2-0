@@ -30,7 +30,8 @@ const Platform = () => {
 				className={styles['platform-wrapper']}
 				width='100%'
 				sx={{
-					p: 8,
+					px: { xs: 2, md: 8 },
+					py: { xs: 4, md: 8 },
 					borderTop: '1px solid rgba(255,255,255,0.1)',
 				}}
 			>
@@ -40,17 +41,33 @@ const Platform = () => {
 						container
 						spacing={4}
 						columns={12}
-						direction='row'
+						direction={{ xs: 'column', md: 'row' }}
 						justifyContent='start'
 						alignItems='start'
-						width="70%"
-						mb={7}
+						mb={{ xs: 0, md: 7 }}
 					>
 						<Typography variant='h2' component='h3' mb={1.5}>
 							The Platform
 						</Typography>
-						<Typography variant='p' component='p' fontSize={16} lineHeight={1.2} mb={3}>
-							At the heart of the ecosystem is our DeFi portfolio tracking and trading platform. Build with secuity and performance in mind, we are delivering the best trading experience!
+						<Typography
+							variant='p'
+							component='p'
+							fontSize={{ xs: 14, md: 18 }}
+							lineHeight={{ xs: 1.75, md: 1.5 }}
+							mb={{ xs: 1, md: 3 }}
+						>
+							The main hub of the Apecron platform is the
+							portfolio management app. With its sleek and modern
+							interface, easily track and trade any tokens in your
+							wallet, or search for any token on the CRO network.
+							Details matter! From the Apecron project scam
+							rating, upvotes and project descriptions, users can
+							make an informed decision about a potential
+							investment without having to search for information
+							on multiple websites! Designed to make the process
+							simple and seamless and customizable to your trade
+							style, Apecron is the #1 choice for both beginner
+							and professional traders.
 						</Typography>
 					</Box>
 					<Grid
@@ -58,7 +75,7 @@ const Platform = () => {
 						container
 						spacing={4}
 						columns={12}
-						direction='row'
+						direction={{ xs: 'column', md: 'row' }}
 						justifyContent='space-between'
 						alignItems='flex-start'
 					>
@@ -83,19 +100,34 @@ const Platform = () => {
 								display='flex'
 								flexDirection='row'
 							>
-								<Grid item xs='auto' mr={2.5} className={styles['about-icon']}>
+								<Grid
+									item
+									xs='auto'
+									mr={2.5}
+									className={styles['about-icon']}
+								>
 									<Image
 										src={PlatformResponsive}
 										width='60'
 										alt='Apecron works on any device: desktop, tablet or mobile.'
 									/>
 								</Grid>
-								<Grid item width="100%">
-									<Typography variant='h4' component='h3' fontSize={18} mb={1}>
+								<Grid item width='100%'>
+									<Typography
+										variant='h4'
+										component='h3'
+										fontSize={18}
+										mb={1}
+									>
 										Designed for responsive
 									</Typography>
-									<Typography variant='p' component='p' fontSize={16}>
-										Apecron works on any device: desktop, tablet or mobile.
+									<Typography
+										variant='p'
+										component='p'
+										fontSize={16}
+									>
+										Apecron works on any device: desktop,
+										tablet or mobile.
 									</Typography>
 								</Grid>
 							</Grid>
@@ -113,19 +145,38 @@ const Platform = () => {
 								display='flex'
 								flexDirection='row'
 							>
-								<Grid item xs='auto' mr={2.5} className={styles['about-icon']}>
+								<Grid
+									item
+									xs='auto'
+									mr={2.5}
+									className={styles['about-icon']}
+								>
 									<Image
 										src={PlatformHot}
 										width='60'
 										alt='With Apecron, save and store your favorite projects and tokens to your watch list and find newly released and promoted projects!'
 									/>
 								</Grid>
-								<Grid item width="100%">
-									<Typography variant='h4' component='h3' fontSize={18} mb={1}>
-										Watchlists, Favorites, Trending, and more
+								<Grid item width='100%'>
+									<Typography
+										variant='h4'
+										component='h3'
+										fontSize={18}
+										mb={1}
+									>
+										Watchlists, Favorites, Trending, and
+										more
 									</Typography>
-									<Typography variant='p' component='p' fontSize={16}>
-										Don't lose track of your favorite projects and tokens. Easily save them to your favorites and watch list, find newly promoted tokens, and see what's hot!
+									<Typography
+										variant='p'
+										component='p'
+										fontSize={16}
+									>
+										Don't lose track of your favorite
+										projects and tokens. Easily save them to
+										your favorites and watch list, find
+										newly promoted tokens, and see what's
+										hot!
 									</Typography>
 								</Grid>
 							</Grid>
@@ -143,19 +194,37 @@ const Platform = () => {
 								display='flex'
 								flexDirection='row'
 							>
-								<Grid item xs='auto' mr={2.5} className={styles['about-icon']}>
+								<Grid
+									item
+									xs='auto'
+									mr={2.5}
+									className={styles['about-icon']}
+								>
 									<Image
 										src={PlatformExplorer}
 										width='60'
 										alt='New pair explorer and contract scanner built in to help secure and safeguard your investing.'
 									/>
 								</Grid>
-								<Grid item width="100%">
-									<Typography variant='h4' component='h3' fontSize={18} mb={1}>
+								<Grid item width='100%'>
+									<Typography
+										variant='h4'
+										component='h3'
+										fontSize={18}
+										mb={1}
+									>
 										New Pair Explorer with contract scanner
 									</Typography>
-									<Typography variant='p' component='p' fontSize={16}>
-										Don't be fooled by rugs and scams, utilize our platform to find new projects to invest in while staying secure with our integrated safety measures.
+									<Typography
+										variant='p'
+										component='p'
+										fontSize={16}
+									>
+										Don't be fooled by rugs and scams,
+										utilize our platform to find new
+										projects to invest in while staying
+										secure with our integrated safety
+										measures.
 									</Typography>
 								</Grid>
 							</Grid>
@@ -173,19 +242,35 @@ const Platform = () => {
 								display='flex'
 								flexDirection='row'
 							>
-								<Grid item xs='auto' mr={2.5} className={styles['about-icon']}>
+								<Grid
+									item
+									xs='auto'
+									mr={2.5}
+									className={styles['about-icon']}
+								>
 									<Image
 										src={PlatformSwap}
 										width='60'
 										alt='You can easily buy and sell tokens through our easy to use and fully integrated swap.'
 									/>
 								</Grid>
-								<Grid item width="100%">
-									<Typography variant='h4' component='h3' fontSize={18} mb={1}>
+								<Grid item width='100%'>
+									<Typography
+										variant='h4'
+										component='h3'
+										fontSize={18}
+										mb={1}
+									>
 										Integrated Swap
 									</Typography>
-									<Typography variant='p' component='p' fontSize={16}>
-										You can easily buy and sell tokens through our easy to use and fully integrated swap.
+									<Typography
+										variant='p'
+										component='p'
+										fontSize={16}
+									>
+										You can easily buy and sell tokens
+										through our easy to use and fully
+										integrated swap.
 									</Typography>
 								</Grid>
 							</Grid>
@@ -202,19 +287,37 @@ const Platform = () => {
 								display='flex'
 								flexDirection='row'
 							>
-								<Grid item xs='auto' mr={2.5} className={styles['about-icon']}>
+								<Grid
+									item
+									xs='auto'
+									mr={2.5}
+									className={styles['about-icon']}
+								>
 									<Image
 										src={PlatformTracking}
 										width='60'
 										alt='See all your trading history and data right from our application! Track your transactions on each token as well as finding detailed data under your asset management.'
 									/>
 								</Grid>
-								<Grid item width="100%">
-									<Typography variant='h4' component='h3' fontSize={18} mb={1}>
-									Portfolio tracking
+								<Grid item width='100%'>
+									<Typography
+										variant='h4'
+										component='h3'
+										fontSize={18}
+										mb={1}
+									>
+										Portfolio tracking
 									</Typography>
-									<Typography variant='p' component='p' fontSize={16}>
-										See all your trading history and data right from our application! Track your transactions on each token as well as finding detailed data under your asset management.
+									<Typography
+										variant='p'
+										component='p'
+										fontSize={16}
+									>
+										See all your trading history and data
+										right from our application! Track your
+										transactions on each token as well as
+										finding detailed data under your asset
+										management.
 									</Typography>
 								</Grid>
 							</Grid>
@@ -231,6 +334,7 @@ const Platform = () => {
 							justifyContent='flex-end'
 							alignItems='flex-end'
 							xs={7}
+							display={{ xs: 'none', md: 'block' }}
 						>
 							<Image
 								src={PlatformImage}

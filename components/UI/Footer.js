@@ -20,7 +20,8 @@ const Footer = () => {
 				className={styles.footer}
 				width='100%'
 				sx={{
-					p: 8,
+					px: { xs: 2, md: 8 },
+					py: { xs: 4, md: 8 },
 					flexGrow: 1,
 				}}
 			>
@@ -28,9 +29,9 @@ const Footer = () => {
 					<Grid
 						className={styles.lead}
 						container
-						spacing={6}
+						spacing={{ md: 6 }}
 						columns={12}
-						direction='row'
+						direction={{ xs: 'column', md: 'row' }}
 						justifyContent='flex-start'
 						alignItems='flex-start'
 					>
@@ -38,9 +39,10 @@ const Footer = () => {
 						<Grid
 							item
 							className={styles['footer-about']}
-							xs={7}
+							xs={12}
+							md={7}
 							spacing={2}
-							display='flex'
+							display={{ xs: 'none', md: 'flex' }}
 							flexDirection='row'
 						>
 							<Grid item xs='auto' mr={3}>

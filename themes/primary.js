@@ -7,7 +7,13 @@ const ApecronThemeDefault = createTheme({
 		},
 		h2: {
 			fontWeight: 700,
-			fontSize: '4rem',
+			fontSize: '3rem',
+			'@media (min-width:600px)': {
+				fontSize: '3.5rem',
+			},
+			'@media (min-width:821px)': {
+				fontSize: '4rem',
+			},
 		},
 		h3: {
 			fontWeight: 700,
@@ -16,9 +22,16 @@ const ApecronThemeDefault = createTheme({
 			fontWeight: 700,
 		},
 		p: {
-			fontSize: '1.25rem',
+			fontSize: '1rem',
 			fontWeight: 400,
+			lineHeight: '1.4',
 			color: '#909090',
+			'@media (min-width:600px)': {
+				fontSize: '1.125rem',
+			},
+			'@media (min-width:821px)': {
+				fontSize: '1.25rem',
+			},
 		},
 	},
 });

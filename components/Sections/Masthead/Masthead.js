@@ -28,16 +28,21 @@ const Masthead = () => {
 					<Grid
 						className={styles.masthead}
 						container
-						spacing={2}
+						spacing={{ xs: 1 }}
+						p={3}
 						columns={16}
 					>
 						<Box xs={16} md={16} textAlign='center'>
 							<Typography variant='h2' component='h2'>
 								The Future Of DEX on Cronos
 							</Typography>
-							<Box sx={{ padding: '0 100px' }}>
+							<Box sx={{ padding: { xs: 0, md: '0 100px' } }}>
 								<Typography variant='p' component='p'>
-									World-class DeFi portfolio tracking and trade management simplied with a secure launchpad for projects and liquidity locker and more!
+									World-Class DeFi Portfolio Management
+									Simplified. <br />
+									Chart Tracking/Trading - Launchpad - Yield
+									Farm/Staking - Token Locker - Social Media
+									Platform
 								</Typography>
 							</Box>
 							<Box

@@ -27,7 +27,8 @@ const Launchpad = () => {
 				className={styles['launchpad-wrapper']}
 				width='100%'
 				sx={{
-					p: 8,
+					px: { xs: 2, md: 8 },
+					py: { xs: 4, md: 8 },
 				}}
 			>
 				<Container maxWidth='lg'>
@@ -35,7 +36,8 @@ const Launchpad = () => {
 					<Box
 						textAlign='center'
 						className={styles['launchpad-header']}
-						pb={8}
+						pb={{ xs: 4, md: 8 }}
+						mb={{ xs: 5, md: 0 }}
 					>
 						<Typography
 							variant='h2'
@@ -51,9 +53,9 @@ const Launchpad = () => {
 					<Grid
 						className={styles.launchpad}
 						container
-						spacing={8}
+						spacing={{ xs: 2, md: 8 }}
 						columns={12}
-						direction='row'
+						direction={{ xs: 'column-reverse', md: 'row' }}
 						justifyContent='space-between'
 						alignItems='flex-start'
 					>
@@ -183,12 +185,11 @@ const Launchpad = () => {
 									>
 										We deliver new projects to the Apecron
 										platform exclusively before they are
-										available anywhere else! Apecron holders
-										will have pre-access to research and
-										dive in on new gems while feeling more
-										confidence in their investment all in
-										ample time so they don't miss out on the
-										ride!
+										available anywhere else! Dive in on new
+										gems while feeling more confidence in
+										the investment, knowing that Apecron
+										takes every measure possible to prevent
+										scams and rugs.
 									</Typography>
 								</Grid>
 							</Grid>
