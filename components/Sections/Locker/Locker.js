@@ -24,6 +24,7 @@ const Locker = () => {
 	return (
 		<>
 			<Box
+				id='locker'
 				className={styles['locker-wrapper']}
 				width='100%'
 				sx={{

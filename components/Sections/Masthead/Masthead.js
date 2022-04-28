@@ -34,7 +34,7 @@ const Masthead = () => {
 					>
 						<Box xs={16} md={16} textAlign='center'>
 							<Typography variant='h2' component='h2'>
-								The Future Of DEX on Cronos
+								The Future of DeFi on Cronos
 							</Typography>
 							<Box sx={{ padding: { xs: 0, md: '0 100px' } }}>
 								<Typography variant='p' component='p'>
@@ -55,21 +55,24 @@ const Masthead = () => {
 										ml: 2,
 									},
 								}}
-								onClick={preventDefault}
 							>
 								<Tooltip title='Launching Soon' placement='top'>
 									<Button
 										className='btn-primary'
 										variant='outlined'
 										href='#'
+										component='a'
+										onClick={preventDefault}
 									>
 										Launch App
 									</Button>
 								</Tooltip>
 
 								<Button
+									component='a'
+									href='/docs/apecron.pdf'
+									target='_blank'
 									variant='outlined'
-									href='#'
 									sx={{
 										color: '#fff',
 										borderColor: '#fff',

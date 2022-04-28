@@ -64,8 +64,8 @@ const Footer = () => {
 								<Typography
 									variant='p'
 									component='p'
-									fontSize={14}
-									lineHeight={1.6}
+									fontSize={{ xs: 14, md: 16 }}
+									lineHeight={{ xs: 1.4, md: 1.6 }}
 								>
 									Apecron is innovating and delivering DeFi
 									solutions on Cronos Chain that includes a
@@ -102,44 +102,57 @@ const Footer = () => {
 							</Typography>
 							<Box display='flex' flexDirection='column'>
 								<Link
-									href='#'
+									href='/docs/apecron.pdf'
+									target='_blank'
 									underline='none'
 									color='#fff'
-									mb={0.5}
-								>
-									About
-								</Link>
-								<Link
-									href='#'
-									underline='none'
-									color='#fff'
-									mb={0.5}
-								>
-									Features
-								</Link>
-								<Link
-									href='#'
-									underline='none'
-									color='#fff'
-									mb={0.5}
+									mb={0.75}
 								>
 									Whitepaper
 								</Link>
 								<Link
-									href='#'
+									href='https://twitter.com/apecronofficial'
+									target='_blank'
 									underline='none'
 									color='#fff'
-									mb={0.5}
+									mb={0.75}
 								>
 									Twitter
 								</Link>
 								<Link
-									href='#'
+									href='https://telegram.me/apecron'
+									target='_blank'
 									underline='none'
 									color='#fff'
-									mb={0.5}
+									mb={0.75}
 								>
 									Telegram
+								</Link>
+								<Link
+									href='https://discord.gg/TBHgPj7PHS'
+									target='_blank'
+									underline='none'
+									color='#fff'
+									mb={0.75}
+								>
+									Discord
+								</Link>
+								<Link
+									href='https://www.instagram.com/apecronofficial/'
+									target='_blank'
+									underline='none'
+									color='#fff'
+									mb={0.75}
+								>
+									Instagram
+								</Link>
+								<Link
+									href='https://apecronofficial.medium.com/'
+									target='_blank'
+									underline='none'
+									color='#fff'
+								>
+									Medium
 								</Link>
 							</Box>
 						</Grid>
@@ -164,7 +177,7 @@ const Footer = () => {
 							</Typography>
 							<Box display='flex' flexDirection='column' mb={1}>
 								<Link
-									href='#'
+									href='mailto:info@apecron.com'
 									underline='none'
 									color='#fff'
 									mb={0.5}
@@ -175,7 +188,7 @@ const Footer = () => {
 							<Typography
 								variant='p'
 								component='p'
-								fontSize={12}
+								fontSize={{ xs: 12 }}
 								lineHeight={1.6}
 							>
 								&copy;2022 Blockchain Innovations LLC. <br />

@@ -24,6 +24,7 @@ const Launchpad = () => {
 	return (
 		<>
 			<Box
+				id='launchpad'
 				className={styles['launchpad-wrapper']}
 				width='100%'
 				sx={{

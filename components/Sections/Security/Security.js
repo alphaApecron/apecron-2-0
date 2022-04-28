@@ -22,6 +22,7 @@ const Platform = () => {
 	return (
 		<>
 			<Box
+				id='security'
 				className={styles['security-wrapper']}
 				width='100%'
 				sx={{

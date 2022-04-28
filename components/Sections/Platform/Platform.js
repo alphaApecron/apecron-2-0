@@ -27,6 +27,7 @@ const Platform = () => {
 	return (
 		<>
 			<Box
+				id='platform'
 				className={styles['platform-wrapper']}
 				width='100%'
 				sx={{

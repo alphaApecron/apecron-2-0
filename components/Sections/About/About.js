@@ -25,6 +25,7 @@ const About = () => {
 	return (
 		<>
 			<Box
+				id='about'
 				className={styles['about-wrapper']}
 				width='100%'
 				sx={{

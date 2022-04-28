@@ -10,6 +10,22 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { styled } from '@mui/system';
 import styles from './Layout.module.scss';
 const preventDefault = (event) => event.preventDefault();
+
+const scroll2El = (elID) => {
+	window.scrollTo({
+		top: document.getElementById(elID).offsetTop - 60,
+		behavior: 'smooth',
+	});
+};
+
+const onLinkClick = (e) => {
+	e.preventDefault();
+	const goto = e.target.getAttribute('goto');
+	setTimeout(() => {
+		scroll2El(goto);
+	}, 100);
+};
+
 const Navigation = () => {
 	return (
 		<>
@@ -42,10 +58,14 @@ const DesktopNav = () => {
 				sx={{
 					typography: 'body1',
 				}}
-				onClick={preventDefault}
 			>
 				<Box className={styles['nav-item']} display='inline-block'>
-					<Link href='#' underline='none'>
+					<Link
+						href='#'
+						goto='about'
+						onClick={onLinkClick}
+						underline='none'
+					>
 						About
 					</Link>
 				</Box>
@@ -55,7 +75,12 @@ const DesktopNav = () => {
 					display='inline-block'
 					ml='1.25rem'
 				>
-					<Link href='#' underline='none'>
+					<Link
+						href='#'
+						goto='platform'
+						onClick={onLinkClick}
+						underline='none'
+					>
 						Platform
 					</Link>
 				</Box>
@@ -65,7 +90,12 @@ const DesktopNav = () => {
 					display='inline-block'
 					ml='1.25rem'
 				>
-					<Link href='#' underline='none'>
+					<Link
+						href='#'
+						goto='launchpad'
+						onClick={onLinkClick}
+						underline='none'
+					>
 						Launchpad + Locker
 					</Link>
 				</Box>
