@@ -1,18 +1,6 @@
 .about-wrapper {
-    background-image: url('/images/site/about-bg.svg');
+	background-image: url('/images/site/about-bg.svg');
 	background-size: contain;
 	background-position: center right;
 	background-repeat: no-repeat;
-}
-
-.about-icon {
-    background-color: rgba(255,255,255,0.1);
-    padding: 10px;
-    width: 60px;
-    height: 60px;
-    border-radius: 8px;
-    img {
-        width: 48px;
-        height: 48px;
-    }
 }

@@ -125,16 +125,10 @@ const About = () => {
 									display='flex'
 									flexDirection='row'
 								>
-									<Grid
-										item
-										xs='auto'
-										mr={2.5}
-										className={styles['about-icon']}
-									>
+									<Grid item xs='auto' mr={2.5}>
 										<Image
 											src={DevIcon}
 											width='60'
-											height='60'
 											alt='2% of transaction fee goes to development'
 										/>
 									</Grid>
@@ -167,16 +161,10 @@ const About = () => {
 									display='flex'
 									flexDirection='row'
 								>
-									<Grid
-										item
-										xs='auto'
-										mr={2.5}
-										className={styles['about-icon']}
-									>
+									<Grid item xs='auto' mr={2.5}>
 										<Image
 											src={MarketingIcon}
 											width='60'
-											height='60'
 											alt='2% of transaction fee goes to marketing'
 										/>
 									</Grid>
@@ -210,16 +198,10 @@ const About = () => {
 									display='flex'
 									flexDirection='row'
 								>
-									<Grid
-										item
-										xs='auto'
-										mr={2.5}
-										className={styles['about-icon']}
-									>
+									<Grid item xs='auto' mr={2.5}>
 										<Image
 											src={LPIcon}
 											width='60'
-											height='60'
 											alt='5% of transaction fee goes to liquidity'
 										/>
 									</Grid>
