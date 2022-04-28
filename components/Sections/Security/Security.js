@@ -12,7 +12,7 @@ import React from 'react';
 import Image from 'next/image';
 
 //Icons
-import SecurityImage from '../../../public/images/graphics/platform-security.svg';
+import SecurityImage from '../../../public/images/graphics/platform-security.png';
 
 //Styles
 import styles from './Security.module.scss';
@@ -80,7 +80,7 @@ const Platform = () => {
 							<Typography
 								variant='p'
 								component='p'
-								fontSize={18}
+								fontSize={{ xs: 18 }}
 								mb={3}
 								lineHeight={1.5}
 							>
@@ -93,7 +93,7 @@ const Platform = () => {
 							<Typography
 								variant='p'
 								component='p'
-								fontSize={18}
+								fontSize={{ xs: 18 }}
 								lineHeight={1.5}
 							>
 								You know you will get the best experience when

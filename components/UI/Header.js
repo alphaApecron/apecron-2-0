@@ -12,14 +12,15 @@ const Header = () => {
 			<Grid
 				container
 				className={styles.header}
-				spacing={2}
+				spacing={{ xs: 0, md: 2 }}
 				columns={16}
 				maxWidth='false'
 				sx={{
 					backgroundColor: `rgba(0,0,0,0.6)`,
 					display: `flex`,
-					justifyContent: `space-between`,
+					justifyContent: { xs: 'center', md: 'space-between' },
 					padding: `10px 20px`,
+					flexDirection: { xs: 'column', md: 'row' },
 				}}
 			>
 				<Logo />

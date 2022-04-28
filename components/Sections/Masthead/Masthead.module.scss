@@ -1,11 +1,11 @@
 .masthead-wrapper {
-	background-image: url('/images/site/hero-image.png');
+	background-image: url('/images/site/hero-image-2.png');
 	background-size: cover;
-	background-position: top center;
+	background-position: 0;
 	background-repeat: no-repeat;
-	padding: 80px 0;
+	height: calc(100vh - 250px);
 	@media (min-width: 821px) {
-		height: calc(100vh - 175px);
+		height: calc(100vh - 50px);
 	}
 }
 .masthead {

@@ -88,6 +88,7 @@ const Footer = () => {
 							item
 							className={styles['footer-about']}
 							xs={2}
+							mb={{ xs: 2, md: 0 }}
 							spacing={2}
 							display='flex'
 							flexDirection='column'

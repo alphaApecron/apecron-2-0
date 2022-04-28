@@ -56,7 +56,7 @@ const Locker = () => {
 							<Typography
 								variant='h4'
 								component='h3'
-								fontSize={30}
+								fontSize={{ xs: 30 }}
 								mt={2}
 								mb={3}
 								color='#010007'
@@ -66,7 +66,7 @@ const Locker = () => {
 							<Typography
 								variant='p'
 								component='p'
-								fontSize={18}
+								fontSize={{ xs: 16 }}
 								mb={3}
 								lineHeight={1.5}
 							>
@@ -104,7 +104,7 @@ const Locker = () => {
 									<Typography
 										variant='h4'
 										component='h3'
-										fontSize={18}
+										fontSize={{ xs: 18 }}
 										mb={1}
 										color='#010007'
 									>
@@ -113,7 +113,7 @@ const Locker = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={16}
+										fontSize={{ xs: 16 }}
 									>
 										Our locker platform will securely lock
 										your LP tokens for any customized
@@ -156,7 +156,7 @@ const Locker = () => {
 									<Typography
 										variant='h4'
 										component='h3'
-										fontSize={18}
+										fontSize={{ xs: 18 }}
 										mb={1}
 										color='#010007'
 									>
@@ -165,7 +165,7 @@ const Locker = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={16}
+										fontSize={{ xs: 16 }}
 									>
 										Our platform securely vests your teams
 										tokens for any specified duration.

@@ -73,7 +73,7 @@ const Launchpad = () => {
 							<Typography
 								variant='h4'
 								component='h3'
-								fontSize={30}
+								fontSize={{ xs: 30 }}
 								mt={2}
 								mb={3}
 								color='#010007'
@@ -83,7 +83,7 @@ const Launchpad = () => {
 							<Typography
 								variant='p'
 								component='p'
-								fontSize={18}
+								fontSize={{ xs: 16 }}
 								mb={3}
 								lineHeight={1.5}
 							>
@@ -125,7 +125,7 @@ const Launchpad = () => {
 									<Typography
 										variant='h4'
 										component='h3'
-										fontSize={18}
+										fontSize={{ xs: 18 }}
 										mb={1}
 										color='#010007'
 									>
@@ -134,7 +134,7 @@ const Launchpad = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={16}
+										fontSize={{ xs: 16 }}
 									>
 										We pride ourselves in bringing the best
 										secure projects to our platform and
@@ -173,7 +173,7 @@ const Launchpad = () => {
 									<Typography
 										variant='h4'
 										component='h3'
-										fontSize={18}
+										fontSize={{ xs: 18 }}
 										mb={1}
 										color='#010007'
 									>
@@ -182,7 +182,7 @@ const Launchpad = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={16}
+										fontSize={{ xs: 16 }}
 									>
 										We deliver new projects to the Apecron
 										platform exclusively before they are

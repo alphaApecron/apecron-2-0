@@ -1,6 +1,9 @@
 // Header
 .header {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+	background: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	z-index: 100;
+	align-items: center;
 }
 
 // Navigation

@@ -10,6 +10,7 @@ import Platform from '../components/Sections/Platform/Platform';
 import Security from '../components/Sections/Security/Security';
 import Launchpad from '../components/Sections/Launchpad/Launchpad';
 import Locker from '../components/Sections/Locker/Locker';
+import Contact from '../components/Sections/Contact/Contact';
 import Footer from '../components/UI/Footer';
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
 			<Security />
 			<Launchpad />
 			<Locker />
+			<Contact />
 			<Footer />
 		</>
 	);

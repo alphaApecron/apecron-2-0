@@ -5,7 +5,13 @@ import {
 	List,
 	ListItem,
 	ListItemBVutton,
+	Drawer,
 } from '@mui/material';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { styled } from '@mui/system';
 import styles from './Layout.module.scss';
@@ -35,8 +41,9 @@ const Navigation = () => {
 				justifyContent='flex-end'
 				alignItems='center'
 				item
-				xs={6}
+				xs={12}
 				md={6}
+				maxWidth={{ xs: '100%', md: 'auto' }}
 			>
 				<DesktopNav />
 			</Grid>
@@ -73,7 +80,7 @@ const DesktopNav = () => {
 				<Box
 					className={styles['nav-item']}
 					display='inline-block'
-					ml='1.25rem'
+					ml={{ xs: '10px', md: '1.25rem' }}
 				>
 					<Link
 						href='#'
@@ -88,7 +95,7 @@ const DesktopNav = () => {
 				<Box
 					className={styles['nav-item']}
 					display='inline-block'
-					ml='1.25rem'
+					ml={{ xs: '10px', md: '1.25rem' }}
 				>
 					<Link
 						href='#'
@@ -100,7 +107,7 @@ const DesktopNav = () => {
 					</Link>
 				</Box>
 
-				<Box
+				{/* <Box
 					className={styles['nav-item']}
 					display='inline-block'
 					ml='1.25rem'
@@ -108,14 +115,19 @@ const DesktopNav = () => {
 					<Link href='#' underline='none'>
 						Team
 					</Link>
-				</Box>
+				</Box> */}
 
 				<Box
 					className={styles['nav-item']}
 					display='inline-block'
-					ml='1.25rem'
+					ml={{ xs: '10px', md: '1.25rem' }}
 				>
-					<Link href='#' underline='none'>
+					<Link
+						href='#'
+						goto='contact'
+						onClick={onLinkClick}
+						underline='none'
+					>
 						Contact
 					</Link>
 				</Box>
@@ -128,9 +140,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 	return <></>;
 };
 
-const MobileNav = () => {
-	return <></>;
-};
+const MobileNav = () => {};
 
 const MobileNavItem = ({ label, children, href }) => {
 	const { isOpen, onToggle } = useDisclosure();

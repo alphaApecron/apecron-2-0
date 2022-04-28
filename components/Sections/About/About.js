@@ -82,8 +82,8 @@ const About = () => {
 								<Typography
 									variant='p'
 									component='p'
-									fontSize={16}
-									lineHeight={1.2}
+									fontSize={{ xs: 16 }}
+									lineHeight={1.4}
 									mb={3}
 								>
 									Apecron is a revolutionary world-class DeFi
@@ -142,7 +142,7 @@ const About = () => {
 										<Typography
 											variant='h4'
 											component='h3'
-											fontSize={18}
+											fontSize={{ xs: 18 }}
 											mb={0.5}
 										>
 											2% for Development
@@ -150,7 +150,7 @@ const About = () => {
 										<Typography
 											variant='p'
 											component='p'
-											fontSize={16}
+											fontSize={{ xs: 16 }}
 										>
 											This helps cover development, server
 											costs, maintenance and more.
@@ -184,7 +184,7 @@ const About = () => {
 										<Typography
 											variant='h4'
 											component='h3'
-											fontSize={18}
+											fontSize={{ xs: 18 }}
 											mb={0.5}
 										>
 											2% for Marketing
@@ -192,7 +192,7 @@ const About = () => {
 										<Typography
 											variant='p'
 											component='p'
-											fontSize={16}
+											fontSize={{ xs: 16 }}
 										>
 											To further expand and reach more
 											users, 2% is set aside for marketing
@@ -227,7 +227,7 @@ const About = () => {
 										<Typography
 											variant='h4'
 											component='h3'
-											fontSize={18}
+											fontSize={{ xs: 18 }}
 											mb={0.5}
 										>
 											5% for Liquidity
@@ -235,7 +235,7 @@ const About = () => {
 										<Typography
 											variant='p'
 											component='p'
-											fontSize={16}
+											fontSize={{ xs: 16 }}
 										>
 											Each transaction adds 5% to our
 											liquidity thus creating more

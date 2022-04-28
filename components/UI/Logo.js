@@ -4,12 +4,28 @@ import { Grid, Link } from '@mui/material';
 import logo from '../../public/images/site/apecron-logo-gradient-website.svg';
 import Image from 'next/image';
 import React from 'react';
+const scroll2El = (elID) => {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth',
+	});
+};
 
-const Logo = () => (
-	<>
-		<Grid item xs={10} md={10}>
+const onLinkClick = (e) => {
+	e.preventDefault();
+	const goto = e.target.getAttribute('goto');
+	setTimeout(() => {
+		scroll2El(goto);
+	}, 100);
+};
+
+const Logo = () => {
+	return (
+		<Grid item xs={12} md={10}>
 			<Link
-				href='/'
+				href='#'
+				goto='masthead'
+				onClick={onLinkClick}
 				sx={{
 					transition: 'opacity 0.3s ease',
 					':hover': {
@@ -25,7 +41,7 @@ const Logo = () => (
 				/>
 			</Link>
 		</Grid>
-	</>
-);
+	);
+};
 
 export default Logo;

@@ -75,3 +75,14 @@ span {
 		}
 	}
 }
+
+.btn-secondary {
+	z-index: 1;
+	padding: 0.75rem 1.875rem;
+
+	&:hover {
+		&::before {
+			opacity: 1;
+		}
+	}
+}

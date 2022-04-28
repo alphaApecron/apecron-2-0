@@ -12,7 +12,7 @@ import React from 'react';
 import Image from 'next/image';
 
 //Icons
-import PlatformImage from '../../../public/images/graphics/platform-wireframe.svg';
+import PlatformImage from '../../../public/images/graphics/platform-wireframe.png';
 import PlatformResponsive from '../../../public/images/icons/platform-responsive.svg';
 import PlatformHot from '../../../public/images/icons/platform-hot.svg';
 import PlatformExplorer from '../../../public/images/icons/platform-explorer.svg';
@@ -117,7 +117,7 @@ const Platform = () => {
 									<Typography
 										variant='h4'
 										component='h3'
-										fontSize={18}
+										fontSize={{ xs: 18 }}
 										mb={1}
 									>
 										Designed for responsive
@@ -125,7 +125,7 @@ const Platform = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={16}
+										fontSize={{ xs: 16 }}
 									>
 										Apecron works on any device: desktop,
 										tablet or mobile.
@@ -162,7 +162,7 @@ const Platform = () => {
 									<Typography
 										variant='h4'
 										component='h3'
-										fontSize={18}
+										fontSize={{ xs: 18 }}
 										mb={1}
 									>
 										Watchlists, Favorites, Trending, and
@@ -171,7 +171,7 @@ const Platform = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={16}
+										fontSize={{ xs: 16 }}
 									>
 										Don't lose track of your favorite
 										projects and tokens. Easily save them to
@@ -211,7 +211,7 @@ const Platform = () => {
 									<Typography
 										variant='h4'
 										component='h3'
-										fontSize={18}
+										fontSize={{ xs: 18 }}
 										mb={1}
 									>
 										New Pair Explorer with contract scanner
@@ -219,7 +219,7 @@ const Platform = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={16}
+										fontSize={{ xs: 16 }}
 									>
 										Don't be fooled by rugs and scams,
 										utilize our platform to find new
@@ -259,7 +259,7 @@ const Platform = () => {
 									<Typography
 										variant='h4'
 										component='h3'
-										fontSize={18}
+										fontSize={{ xs: 18 }}
 										mb={1}
 									>
 										Integrated Swap
@@ -267,7 +267,7 @@ const Platform = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={16}
+										fontSize={{ xs: 16 }}
 									>
 										You can easily buy and sell tokens
 										through our easy to use and fully
@@ -304,7 +304,7 @@ const Platform = () => {
 									<Typography
 										variant='h4'
 										component='h3'
-										fontSize={18}
+										fontSize={{ xs: 18 }}
 										mb={1}
 									>
 										Portfolio tracking
@@ -312,7 +312,7 @@ const Platform = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={16}
+										fontSize={{ xs: 16 }}
 									>
 										See all your trading history and data
 										right from our application! Track your
