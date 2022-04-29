@@ -26,6 +26,7 @@ const Masthead = () => {
 			>
 				<Container
 					maxWidth='md'
+					className={styles['masthead-container']}
 					sx={{
 						display: 'flex',
 						flexDirection: 'column',

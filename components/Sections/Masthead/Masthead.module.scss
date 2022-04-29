@@ -3,12 +3,22 @@
 	background-size: cover;
 	background-position: 0;
 	background-repeat: no-repeat;
-	height: calc(100vh - 250px);
+	height: calc(100vh - 100px);
 	@media (min-width: 768px) {
-		height: calc(100vh - 200px);
+		height: calc(100vh - 300px);
 	}
 	@media (min-width: 821px) {
 		height: calc(100vh - 50px);
+	}
+}
+.masthead-container {
+	height: calc(100% - 89px);
+	position: relative;
+	top: 89px;
+	@media (min-width: 821px) {
+		height: calc(100% - 105px);
+		position: relative;
+		top: 105px;
 	}
 }
 .masthead {
