@@ -152,9 +152,9 @@ const Features = () => {
 									component='p'
 									fontSize={{ xs: 16 }}
 								>
-									Explore new safe and vetted projects thru
-									our Launchpad. Claim project tokens thru the
-									dashboard.
+									Explore new safe and vetted projects through
+									our Launchpad. Claim project tokens through
+									the dashboard.
 								</Typography>
 							</Grid>
 						</Grid>
@@ -342,7 +342,7 @@ const Features = () => {
 								>
 									We're helping projects succeed with the
 									ability to lock their LP tokens and team
-									tokens thru our platform.
+									tokens through our platform.
 								</Typography>
 							</Grid>
 						</Grid>
@@ -433,7 +433,7 @@ const Features = () => {
 									component='p'
 									fontSize={{ xs: 16 }}
 								>
-									View parntered and featured projects, save
+									View partnered and featured projects, save
 									them to your favorites, and find the next
 									moonshot.
 								</Typography>
