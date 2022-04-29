@@ -48,18 +48,15 @@ const About = () => {
 							item
 							className={styles['leads-item']}
 							xs={7}
-							spacing={2}
 							display='flex'
 							flexDirection='row'
 						>
-							<Grid item>
-								<Image
-									src={PortfolioImage}
-									width='688'
-									height='400'
-									alt='Apecron is a portfolio tracking and trading management platform'
-								/>
-							</Grid>
+							<Image
+								src={PortfolioImage}
+								width='688'
+								height='400'
+								alt='Apecron is a portfolio tracking and trading management platform'
+							/>
 						</Grid>
 
 						{/* About Content */}
@@ -67,7 +64,6 @@ const About = () => {
 							item
 							className={styles['about-overview']}
 							xs={5}
-							spacing={2}
 							display='flex-wrap'
 							flexDirection='row'
 						>

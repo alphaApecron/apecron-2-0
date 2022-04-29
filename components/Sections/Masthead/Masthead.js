@@ -11,7 +11,7 @@ import {
 import React from 'react';
 import Image from 'next/image';
 import styles from './Masthead.module.scss';
-import PlatformPreview from '../../../public/images/graphics/platform-image-preview.png';
+import PlatformPreview from '../../../public/images/graphics/platform-image-preview.svg';
 const Masthead = () => {
 	const preventDefault = (event) => event.preventDefault();
 
@@ -29,17 +29,22 @@ const Masthead = () => {
 					sx={{
 						display: 'flex',
 						flexDirection: 'column',
-						height: '100%',
-						justifyContent: { xs: 'center', md: 'flex-start' },
+						height: 'calc(100% - 105px)',
+						position: 'relative',
+						top: '105px',
+						justifyContent: { xs: 'center', md: 'space-between' },
 					}}
 				>
 					<Grid
 						className={styles.masthead}
 						container
 						spacing={{ xs: 1 }}
-						pt={{ xs: 3, md: 25 }}
+						pt={{ xs: 0, md: 15 }}
+						pb={{ xs: 0, md: 10 }}
 						px={{ xs: 2, md: 0 }}
+						mt={{ xs: 0 }}
 						columns={16}
+						direction='column'
 					>
 						<Box xs={16} md={16} textAlign='center'>
 							<Typography
@@ -109,23 +114,18 @@ const Masthead = () => {
 							</Box>
 						</Box>
 					</Grid>
+					<Box
+						id='preview-image'
+						display={{ xs: 'none', md: 'block' }}
+						mb='-15px'
+					>
+						<Image
+							src={PlatformPreview}
+							width='1175px'
+							alt='Apecron is a portfolio tracking and trading management platform'
+						/>
+					</Box>
 				</Container>
-				<Box
-					id='preview-image'
-					className={styles['preview-image']}
-					position='absolute'
-					left='50%'
-					ml='-585px'
-					bottom='-30%'
-					width='1170px'
-					display={{ xs: 'none', md: 'block' }}
-				>
-					<Image
-						src={PlatformPreview}
-						width='1175px'
-						alt='Apecron is a portfolio tracking and trading management platform'
-					/>
-				</Box>
 			</Box>
 		</>
 	);

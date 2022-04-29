@@ -41,7 +41,6 @@ const Footer = () => {
 							className={styles['footer-about']}
 							xs={12}
 							md={7}
-							spacing={2}
 							display={{ xs: 'none', md: 'flex' }}
 							flexDirection='row'
 						>
@@ -77,7 +76,7 @@ const Footer = () => {
 									developing new technologies to improve the
 									way users can learn and interact with crypto
 									in a safe environment and reducing the
-									outcome of scams.
+									outcome of fraudulent projects.
 								</Typography>
 							</Grid>
 						</Grid>
@@ -88,8 +87,7 @@ const Footer = () => {
 							item
 							className={styles['footer-about']}
 							xs={2}
-							mb={{ xs: 2, md: 0 }}
-							spacing={2}
+							mb={{ xs: 4, md: 0 }}
 							display='flex'
 							flexDirection='column'
 						>
@@ -164,7 +162,6 @@ const Footer = () => {
 							item
 							className={styles['footer-about']}
 							xs={3}
-							spacing={2}
 							display='flex'
 							flexDirection='column'
 						>

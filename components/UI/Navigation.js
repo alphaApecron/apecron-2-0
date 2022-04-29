@@ -1,19 +1,4 @@
-import {
-	Grid,
-	Link,
-	Box,
-	List,
-	ListItem,
-	ListItemBVutton,
-	Drawer,
-} from '@mui/material';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { styled } from '@mui/system';
+import { Grid, Link, Box, Typography } from '@mui/material';
 import styles from './Layout.module.scss';
 const preventDefault = (event) => event.preventDefault();
 
@@ -32,19 +17,31 @@ const onLinkClick = (e) => {
 	}, 100);
 };
 
-const Navigation = () => {
+const Navigation = (props) => {
+	const { isOpen, onChange } = props;
 	return (
 		<>
 			{/* <Grid item xs={8} display={{ xs: 'flex', md: 'none' }}></Grid> */}
 			<Grid
-				display='flex'
-				justifyContent='flex-end'
-				alignItems='center'
+				display={{ xs: 'none', md: 'flex' }}
+				flexDirection='column'
+				justifyContent='center'
+				alignItems='flex-end'
 				item
 				xs={12}
-				md={6}
-				maxWidth={{ xs: '100%', md: 'auto' }}
+				md={8}
 			>
+				<Box
+					mb={1}
+					backgroundColor='rgba(255,255,255,0.1)'
+					p='5px'
+					borderRadius='4px'
+				>
+					<Typography variant='p' component='p' fontSize={{ xs: 10 }}>
+						Contract Address:
+						0X09AAE6C66BC670016801E34D19B1775B038B6C43
+					</Typography>
+				</Box>
 				<DesktopNav />
 			</Grid>
 		</>
@@ -56,7 +53,7 @@ const DesktopNav = () => {
 		<>
 			<Box
 				container
-				direction='row'
+				flexDirection='row'
 				justifyContent='flex-end'
 				alignItems='center'
 				className={styles.navigation}

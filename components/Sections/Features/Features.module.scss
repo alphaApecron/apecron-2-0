@@ -1,0 +1,20 @@
+.features-wrapper {
+	background-color: #fff;
+}
+
+.features-header {
+	h3 {
+		display: inline-block;
+		position: relative;
+		&:after {
+			display: block;
+			content: '';
+			height: 3px;
+			background: #1a82ff;
+			width: 40px;
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, 10px);
+		}
+	}
+}

@@ -44,7 +44,7 @@ const Platform = () => {
 						<Grid
 							item
 							className={styles['platform-image']}
-							direction='column'
+							flexDirection='column'
 							justifyContent='flex-end'
 							alignItems='flex-end'
 							xs={12}
@@ -61,7 +61,7 @@ const Platform = () => {
 						<Grid
 							item
 							className={styles['security-highlights']}
-							direction='column'
+							flexDirection='column'
 							justifyContent='center'
 							alignItems='center'
 							xs={12}

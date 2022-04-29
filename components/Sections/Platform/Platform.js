@@ -84,8 +84,7 @@ const Platform = () => {
 						<Grid
 							item
 							className={styles['platform-highlights']}
-							spacing={10}
-							direction='column'
+							flexDirection='column'
 							justifyContent='center'
 							alignItems='center'
 							xs={5}
@@ -141,7 +140,6 @@ const Platform = () => {
 								pt={0}
 								mt={0}
 								mb={4}
-								spacing={2}
 								xs={12}
 								display='flex'
 								flexDirection='row'
@@ -175,7 +173,7 @@ const Platform = () => {
 									>
 										Don't lose track of your favorite
 										projects and tokens. Easily save them to
-										your favorites and watch list, find
+										your favorites and watchlists, find
 										newly promoted tokens, and see what's
 										hot!
 									</Typography>
@@ -190,7 +188,6 @@ const Platform = () => {
 								pt={0}
 								mt={0}
 								mb={4}
-								spacing={2}
 								xs={12}
 								display='flex'
 								flexDirection='row'
@@ -221,7 +218,7 @@ const Platform = () => {
 										component='p'
 										fontSize={{ xs: 16 }}
 									>
-										Don't be fooled by rugs and scams,
+										Don't be tricked by rugs and scams,
 										utilize our platform to find new
 										projects to invest in while staying
 										secure with our integrated safety
@@ -238,7 +235,6 @@ const Platform = () => {
 								pt={0}
 								mt={0}
 								mb={4}
-								spacing={2}
 								xs={12}
 								display='flex'
 								flexDirection='row'
@@ -283,7 +279,6 @@ const Platform = () => {
 								pt={0}
 								mt={0}
 								mb={4}
-								spacing={2}
 								xs={12}
 								display='flex'
 								flexDirection='row'
@@ -330,8 +325,7 @@ const Platform = () => {
 						<Grid
 							item
 							className={styles['platform-image']}
-							spacing={2}
-							direction='column'
+							flexDirection='column'
 							justifyContent='flex-end'
 							alignItems='flex-end'
 							xs={7}

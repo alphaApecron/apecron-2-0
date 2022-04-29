@@ -3,7 +3,6 @@
 	background: rgba(0, 0, 0, 0.7);
 	position: fixed;
 	z-index: 100;
-	align-items: center;
 }
 
 // Navigation
@@ -16,5 +15,42 @@
 				color: rgba(255, 255, 255, 0.6);
 			}
 		}
+	}
+}
+
+.navigationmobile {
+	padding-top: 40px;
+	.nav-item {
+		display: block;
+		margin: 0 0 10px 0;
+		padding: 0 0 10px 0;
+		font-size: 1.5rem;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		a {
+			color: #fff;
+			transition: color 0.3s ease;
+			&:hover {
+				color: rgba(255, 255, 255, 0.6);
+			}
+		}
+	}
+}
+
+.close-menu {
+	background-color: rgba(255, 255, 255, 0.1);
+	display: block;
+	border-radius: 50%;
+	height: 36px;
+	width: 36px;
+	position: relative;
+	color: #fff;
+	svg {
+		width: 18px;
+		height: 18px;
+		position: absolute;
+		left: 50%;
+		margin-left: -9px;
+		top: 50%;
+		margin-top: -9px;
 	}
 }

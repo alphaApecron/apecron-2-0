@@ -30,6 +30,7 @@ const Launchpad = () => {
 				sx={{
 					px: { xs: 2, md: 8 },
 					py: { xs: 4, md: 8 },
+					borderTop: '1px solid rgba(0,0,0,0.1)',
 				}}
 			>
 				<Container maxWidth='lg'>
@@ -57,15 +58,14 @@ const Launchpad = () => {
 						spacing={{ xs: 2, md: 8 }}
 						columns={12}
 						direction={{ xs: 'column-reverse', md: 'row' }}
-						justifyContent='space-between'
-						alignItems='flex-start'
+						justifyContent={{ xs: 'center', md: 'space-between' }}
+						alignItems={{ xs: 'center', md: 'flex-start' }}
 					>
 						{/* Launchpad Highlights */}
 						<Grid
 							item
 							className={styles['launchpad-highlights']}
-							spacing={10}
-							direction='column'
+							flexDirection='column'
 							justifyContent='center'
 							alignItems='center'
 							xs={6}
@@ -91,8 +91,9 @@ const Launchpad = () => {
 								establishing a safe and trusted launchpad that
 								will provide fully vetted projects the ability
 								to partner with us and launch on our platform
-								while benefiting Apecron holders thru exclusive
-								airdrops and limited pre-access for
+								while benefiting Apecron holders where you will
+								be able to claim a portion of tokens for
+								projects that partner with us as well as
 								participating in launches. The launchpad is
 								designed to help raise capital to kick start
 								your project!
@@ -214,11 +215,11 @@ const Launchpad = () => {
 						<Grid
 							item
 							className={styles['launchpad-image']}
-							spacing={2}
-							direction='column'
-							justifyContent='flex-end'
-							alignItems='flex-end'
+							flexDirection='column'
+							justifyContent={{ xs: 'center', md: 'flex-end' }}
+							alignItems={{ xs: 'center', md: 'flex-end' }}
 							xs={6}
+							width={{ xs: '50%', sm: '75%', md: '100%' }}
 						>
 							<Image
 								src={LaunchpadImage}

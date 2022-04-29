@@ -40,15 +40,14 @@ const Locker = () => {
 						spacing={{ xs: 2, md: 8 }}
 						columns={12}
 						direction={{ xs: 'column-reverse', md: 'row' }}
-						justifyContent='space-between'
-						alignItems='flex-start'
+						justifyContent={{ xs: 'center', md: 'space-between' }}
+						alignItems={{ xs: 'center', md: 'flex-start' }}
 					>
 						{/* Locker Highlights */}
 						<Grid
 							item
 							className={styles['locker-highlights']}
-							spacing={10}
-							direction='column'
+							flexDirection='column'
 							justifyContent='center'
 							alignItems='center'
 							xs={6}
@@ -196,11 +195,11 @@ const Locker = () => {
 						<Grid
 							item
 							className={styles['launchpad-image']}
-							spacing={2}
-							direction='column'
-							justifyContent='flex-end'
-							alignItems='flex-end'
+							flexDirection='column'
+							justifyContent={{ xs: 'center', md: 'flex-end' }}
+							alignItems={{ xs: 'center', md: 'flex-end' }}
 							xs={6}
+							width={{ xs: '50%', sm: '75%', md: '100%' }}
 						>
 							<Image
 								src={LockerImage}

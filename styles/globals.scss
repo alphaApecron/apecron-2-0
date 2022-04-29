@@ -8,6 +8,10 @@ body {
 	background: var(--background);
 }
 
+.slide-menu-open {
+	overflow: hidden;
+}
+
 html,
 body {
 	padding: 0;
@@ -84,5 +88,22 @@ span {
 		&::before {
 			opacity: 1;
 		}
+	}
+}
+
+.slide-menu-container {
+	position: fixed;
+	right: 0;
+	top: 0;
+	transform: translate3d(200vw, 0, 0);
+	background-color: rgba(#010007, 0.95);
+	z-index: 1000;
+
+	padding: 20px;
+	width: 100vw;
+	height: 100vh;
+	transition: all 0.3s ease;
+	&.open {
+		transform: translate3d(0, 0, 0);
 	}
 }

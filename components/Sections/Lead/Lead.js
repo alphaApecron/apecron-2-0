@@ -37,17 +37,16 @@ const Lead = () => {
 					<Grid
 						className={styles.lead}
 						container
-						spacing={{ xs: 1, md: 4 }}
+						columnSpacing={{ xs: 1, md: 2, lg: 3 }}
 						columns={12}
 						direction={{ xs: 'column', md: 'row' }}
 						justifyContent='center'
-						alignItems={{ xs: 'center', md: 'center' }}
+						alignItems={{ xs: 'flex-start', md: 'flex-start' }}
 					>
 						<Grid
 							item
 							className={styles['leads-item']}
 							xs={4}
-							spacing={{ xs: 1, md: 2 }}
 							display='flex'
 							flexDirection='row'
 							mb={{ xs: 3, sm: 2, md: 0 }}
@@ -61,7 +60,11 @@ const Lead = () => {
 								/>
 							</Grid>
 							<Grid item xs>
-								<Typography variant='h4' component='h3'>
+								<Typography
+									variant='h4'
+									component='h3'
+									fontSize={{ xs: 22, md: 22, lg: 30 }}
+								>
 									Built for Cronos
 								</Typography>
 								<Typography variant='p' component='p'>
@@ -74,7 +77,6 @@ const Lead = () => {
 							item
 							className={styles['leads-item']}
 							xs={4}
-							spacing={2}
 							display='flex'
 							flexDirection='row'
 							mb={{ xs: 3, sm: 2, md: 0 }}
@@ -88,7 +90,11 @@ const Lead = () => {
 								/>
 							</Grid>
 							<Grid item xs>
-								<Typography variant='h4' component='h3'>
+								<Typography
+									variant='h4'
+									component='h3'
+									fontSize={{ xs: 22, md: 22, lg: 30 }}
+								>
 									Security Focused
 								</Typography>
 								<Typography variant='p' component='p'>
@@ -101,7 +107,6 @@ const Lead = () => {
 							item
 							className={styles['leads-item']}
 							xs={4}
-							spacing={2}
 							display='flex'
 							flexDirection='row'
 						>
@@ -114,7 +119,11 @@ const Lead = () => {
 								/>
 							</Grid>
 							<Grid item xs>
-								<Typography variant='h4' component='h3'>
+								<Typography
+									variant='h4'
+									component='h3'
+									fontSize={{ xs: 22, md: 22, lg: 30 }}
+								>
 									Tokenomics
 								</Typography>
 								<Typography variant='p' component='p'>
