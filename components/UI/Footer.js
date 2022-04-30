@@ -171,7 +171,7 @@ const Footer = () => {
 								fontSize={20}
 								mb={1}
 							>
-								Contact Us
+								Get in Touch
 							</Typography>
 							<Box display='flex' flexDirection='column' mb={1}>
 								<Link
