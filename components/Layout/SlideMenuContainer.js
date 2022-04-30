@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
-import { Link, Box, Container, Typography } from '@mui/material';
+import { Link, Box, Container, Typography, Grid } from '@mui/material';
+import Image from 'next/image';
 import CloseIcon from '@mui/icons-material/Close';
+import TelegramIcon from '../../public/images/social/telegram-color.svg';
+import DiscordIcon from '../../public/images/social/discord-color.svg';
+import TwitterIcon from '../../public/images/social/twitter-color.svg';
+import MediumIcon from '../../public/images/social/medium-color.svg';
+import InstagramIcon from '../../public/images/social/instagram-color.svg';
 import styles from '../UI/Layout.module.scss';
 
 const SlideMenuContainer = (props) => {
@@ -75,16 +81,6 @@ const SlideMenuContainer = (props) => {
 						</Link>
 					</Box>
 
-					{/* <Box
-					className={styles['nav-item']}
-					display='inline-block'
-					ml='1.25rem'
-				>
-					<Link href='#' underline='none'>
-						Team
-					</Link>
-				</Box> */}
-
 					<Box
 						className={styles['nav-item']}
 						display='inline-block'
@@ -100,6 +96,86 @@ const SlideMenuContainer = (props) => {
 						</Link>
 					</Box>
 				</Box>
+				<Grid
+					container
+					columns={10}
+					direction='row'
+					columnSpacing={3}
+					justifyContent='center'
+					alignItems='center'
+					pt={2}
+				>
+					<Grid item xs='fit'>
+						<Link
+							href='https://telegram.me/apecron'
+							underline='none'
+							target='_blank'
+						>
+							<Image
+								src={TelegramIcon}
+								width='32'
+								height='32'
+								alt='Join Apecron on Telegram'
+							/>
+						</Link>
+					</Grid>
+					<Grid item xs='fit'>
+						<Link
+							href='https://discord.gg/TBHgPj7PHS'
+							underline='none'
+							target='_blank'
+						>
+							<Image
+								src={DiscordIcon}
+								width='32'
+								height='32'
+								alt='Join Apecron on Discord'
+							/>
+						</Link>
+					</Grid>
+					<Grid item xs='fit'>
+						<Link
+							href='https://twitter.com/apecronofficial'
+							underline='none'
+							target='_blank'
+						>
+							<Image
+								src={TwitterIcon}
+								width='32'
+								height='32'
+								alt='Join Apecron on Twitter'
+							/>
+						</Link>
+					</Grid>
+					<Grid item xs='fit'>
+						<Link
+							href='https://www.instagram.com/apecronofficial'
+							underline='none'
+							target='_blank'
+						>
+							<Image
+								src={InstagramIcon}
+								width='32'
+								height='32'
+								alt='Join Apecron on Instagram'
+							/>
+						</Link>
+					</Grid>
+					<Grid item xs='fit'>
+						<Link
+							href='https://apecronofficial.medium.com/'
+							underline='none'
+							target='_blank'
+						>
+							<Image
+								src={MediumIcon}
+								width='32'
+								height='32'
+								alt='Join Apecron on Medium'
+							/>
+						</Link>
+					</Grid>
+				</Grid>
 				<Box>
 					<Typography
 						variant='p'
@@ -107,7 +183,7 @@ const SlideMenuContainer = (props) => {
 						fontSize={{ xs: 16 }}
 						color='#fff'
 						fontWeight='600'
-						mt={5}
+						mt={3}
 						mb={1}
 					>
 						Contract Address:

@@ -11,6 +11,9 @@ import {
 import React from 'react';
 import Image from 'next/image';
 import EmailIcon from '../../../public/images/icons/email-icon.png';
+import TelegramIcon from '../../../public/images/social/telegram-color.svg';
+import DiscordIcon from '../../../public/images/social/discord-color.svg';
+import TwitterIcon from '../../../public/images/social/twitter-color.svg';
 
 //Styles
 import styles from './Contact.module.scss';
@@ -85,7 +88,7 @@ const Contact = () => {
 								item
 								xs='auto'
 								mr={2.5}
-								className={styles['about-icon']}
+								className={styles['email-icon']}
 							>
 								<Image
 									src={EmailIcon}
@@ -119,67 +122,157 @@ const Contact = () => {
 							fontWeight='600'
 							fontSize={{ xs: 20, md: 24 }}
 						>
-							Online Communities
+							Join our online communities!
 						</Typography>
 					</Box>
 					<Grid
 						container
-						display='flex'
-						justifyContent='space-between'
-						flexDirection='row'
-						pt={4}
-						columnSpacing={2}
-						columns={10}
+						columns={12}
+						pt={3}
+						direction={{ xs: 'column', sm: 'row' }}
 					>
-						<Grid
-							item
-							className={styles['community-item']}
-							xs={5}
-							display='flex'
-							justifyContent='center'
-							flexDirection='row'
+						<Link
+							className={styles['social-item']}
+							href='https://telegram.me/apecron'
+							underline='none'
+							fontSize={{ xs: 18 }}
+							fontWeight='600'
+							color='#010007'
+							target='_blank'
+							pt={0}
+							mt={0}
+							sx={{
+								width: { xs: '100%', sm: '33.333337%' },
+								display: 'flex',
+								alignItems: 'center',
+								flexDirection: 'row',
+								justifyContent: {
+									xs: 'flex-start',
+									sm: 'center',
+								},
+								borderBottom: {
+									xs: '1px solid rgba(0,0,0,.1)',
+									sm: 'none',
+								},
+								paddingBottom: {
+									xs: '5px',
+									md: '0',
+								},
+								marginBottom: {
+									xs: '5px',
+									md: '0',
+								},
+							}}
 						>
 							<Grid
 								item
-								xs={12}
-								textAlign='right'
-								borderRight='1px solid rgba(0,0,0,.1)'
-								pr={2}
+								xs='auto'
+								mr={2.5}
+								className={styles['social-icon']}
+								component='span'
 							>
-								<Link
-									href='https://t.me/apecron'
-									underline='none'
-									target='_blank'
-									fontSize={{ xs: 18 }}
-									fontWeight='600'
-									color='#010007'
-								>
-									Telegram
-								</Link>
+								<Image
+									src={TelegramIcon}
+									width='32'
+									height='32'
+									alt='Join Apecron on Telegram'
+								/>
 							</Grid>
-						</Grid>
-						<Grid
-							item
-							className={styles['community-item']}
-							xs={5}
-							display='flex'
-							justifyContent='center'
-							flexDirection='row'
+							<Grid item xs={8} component='span'>
+								Telegram
+							</Grid>
+						</Link>
+						<Link
+							className={styles['social-item']}
+							href='https://discord.gg/TBHgPj7PHS'
+							underline='none'
+							fontSize={{ xs: 18 }}
+							fontWeight='600'
+							color='#010007'
+							target='_blank'
+							pt={0}
+							mt={0}
+							sx={{
+								width: { xs: '100%', sm: '33.333337%' },
+								display: 'flex',
+								alignItems: 'center',
+								flexDirection: 'row',
+								justifyContent: {
+									xs: 'flex-start',
+									sm: 'center',
+								},
+								borderBottom: {
+									xs: '1px solid rgba(0,0,0,.1)',
+									sm: 'none',
+								},
+								paddingBottom: {
+									xs: '5px',
+									md: '0',
+								},
+								marginBottom: {
+									xs: '5px',
+									md: '0',
+								},
+							}}
 						>
-							<Grid item xs={12} textAlign='left'>
-								<Link
-									href='https://discord.gg/TBHgPj7PHS'
-									underline='none'
-									fontSize={{ xs: 18 }}
-									fontWeight='600'
-									color='#010007'
-								>
-									Discord
-								</Link>
+							<Grid
+								item
+								xs='auto'
+								mr={2.5}
+								className={styles['social-icon']}
+								component='span'
+							>
+								<Image
+									src={DiscordIcon}
+									width='32'
+									height='32'
+									alt='Join Apecron on Discord'
+								/>
 							</Grid>
-						</Grid>
+							<Grid item xs={8} component='span'>
+								Discord
+							</Grid>
+						</Link>
+						<Link
+							className={styles['social-item']}
+							href='https://twitter.com/apecronofficial'
+							underline='none'
+							fontSize={{ xs: 18 }}
+							fontWeight='600'
+							color='#010007'
+							target='_blank'
+							pt={0}
+							mt={0}
+							sx={{
+								width: { xs: '100%', sm: '33.333337%' },
+								display: 'flex',
+								alignItems: 'center',
+								flexDirection: 'row',
+								justifyContent: {
+									xs: 'flex-start',
+									sm: 'center',
+								},
+							}}
+						>
+							<Grid
+								item
+								xs='auto'
+								mr={2.5}
+								className={styles['social-icon']}
+								component='span'
+							>
+								<Image
+									src={TwitterIcon}
+									width='32'
+									height='32'
+									alt='Join Apecron on Twitter'
+								/>
+							</Grid>
+							<Grid item xs={8} component='span'>
+								Twitter
+							</Grid>
+						</Link>
 					</Grid>
-					{/* End: Contact Leading Header */}
 				</Container>
 			</Box>
 		</>

@@ -38,16 +38,18 @@ const About = () => {
 					<Grid
 						className={styles.about}
 						container
-						spacing={4}
+						columnSpacing={4}
 						columns={12}
 						direction={{ xs: 'column', md: 'row' }}
 						justifyContent='center'
-						alignItems='center'
+						alignItems='flex-start'
 					>
 						<Grid
 							item
 							className={styles['leads-item']}
-							xs={7}
+							xs={12}
+							md={6}
+							pb={{ xs: 3, md: 0 }}
 							display='flex'
 							flexDirection='row'
 						>
@@ -63,7 +65,8 @@ const About = () => {
 						<Grid
 							item
 							className={styles['about-overview']}
-							xs={5}
+							xs={12}
+							md={6}
 							display='flex-wrap'
 							flexDirection='row'
 						>
@@ -107,11 +110,11 @@ const About = () => {
 							<Grid
 								className={styles['about-items-list']}
 								container
-								spacing={4}
+								rowSpacing={4}
 								columns={12}
 								direction='column'
-								justifyContent='center'
-								alignItems='center'
+								justifyContent='start'
+								alignItems='start'
 							>
 								<Grid
 									item

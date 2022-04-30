@@ -115,7 +115,7 @@ const Platform = () => {
 										variant='outlined'
 										href='#'
 									>
-										Launch App
+										Launch App - coming soon
 									</Button>
 								</Tooltip>
 							</Box>

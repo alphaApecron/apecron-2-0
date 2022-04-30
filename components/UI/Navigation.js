@@ -104,16 +104,6 @@ const DesktopNav = () => {
 					</Link>
 				</Box>
 
-				{/* <Box
-					className={styles['nav-item']}
-					display='inline-block'
-					ml='1.25rem'
-				>
-					<Link href='#' underline='none'>
-						Team
-					</Link>
-				</Box> */}
-
 				<Box
 					className={styles['nav-item']}
 					display='inline-block'

@@ -18,3 +18,19 @@
 		}
 	}
 }
+
+.social-item {
+	span {
+		&:last-child {
+			color: #010007;
+		}
+		transition: color 0.3s ease;
+	}
+	&:hover {
+		span {
+			&:last-child {
+				color: #1a82ff;
+			}
+		}
+	}
+}

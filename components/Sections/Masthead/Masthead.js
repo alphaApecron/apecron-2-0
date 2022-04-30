@@ -40,7 +40,7 @@ const Masthead = () => {
 						className={styles.masthead}
 						container
 						spacing={{ xs: 1 }}
-						pt={{ xs: 0, md: 15 }}
+						pt={{ xs: 0, md: 12 }}
 						pb={{ xs: 0, md: 10 }}
 						px={{ xs: 2, md: 0 }}
 						mt={{ xs: 0 }}
@@ -89,7 +89,7 @@ const Masthead = () => {
 											mr: { xs: 0, md: 2 },
 										}}
 									>
-										Launch App
+										Launch App - coming soon
 									</Button>
 								</Tooltip>
 
