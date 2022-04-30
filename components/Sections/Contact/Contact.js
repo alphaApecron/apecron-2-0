@@ -48,7 +48,7 @@ const Contact = () => {
 							color='#010007'
 							fontWeight='300'
 						>
-							Core Ecosystem
+							Contact Us
 						</Typography>
 						<Box pt={5}>
 							<Typography
