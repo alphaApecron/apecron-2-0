@@ -1,6 +1,6 @@
 // Header
 .header {
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.85);
 	position: fixed;
 	z-index: 100;
 }
@@ -22,13 +22,14 @@
 	padding-top: 40px;
 	.nav-item {
 		display: block;
-		margin: 0 0 10px 0;
-		padding: 0 0 10px 0;
 		font-size: 1.5rem;
+		margin-left: 0;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 		a {
 			color: #fff;
 			transition: color 0.3s ease;
+			padding: 10px 0;
+			display: block;
 			&:hover {
 				color: rgba(255, 255, 255, 0.6);
 			}

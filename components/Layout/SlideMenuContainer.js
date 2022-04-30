@@ -33,9 +33,6 @@ const SlideMenuContainer = (props) => {
 					className={styles.navigationmobile}
 					component='nav'
 					ariaLabel='Primary Navigation'
-					sx={{
-						typography: 'body1',
-					}}
 				>
 					<Box className={styles['nav-item']} display='inline-block'>
 						<Link

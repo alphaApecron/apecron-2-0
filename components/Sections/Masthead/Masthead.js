@@ -51,7 +51,7 @@ const Masthead = () => {
 							<Typography
 								variant='h2'
 								component='h2'
-								fontSize={{ xs: 24, md: 60 }}
+								fontSize={{ xs: 24, sm: 36, md: 60 }}
 							>
 								The Future of DeFi on Cronos
 							</Typography>

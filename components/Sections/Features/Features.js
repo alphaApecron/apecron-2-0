@@ -44,13 +44,15 @@ const Features = () => {
 						textAlign='center'
 						className={styles['features-header']}
 						pb={{ xs: 4, md: 8 }}
-						mb={{ xs: 5, md: 0 }}
+						mb={{ xs: 2, md: 0 }}
 					>
 						<Typography
 							variant='h2'
-							component='h3'
+							component='h2'
 							color='#010007'
 							fontWeight='300'
+							fontSize={{ xs: 30, md: 48 }}
+							lineHeight={{ xs: 1.375, md: 1.5 }}
 						>
 							All Platform Features
 						</Typography>
@@ -93,8 +95,8 @@ const Features = () => {
 							<Grid item width='100%'>
 								<Typography
 									variant='h4'
-									component='h3'
-									fontSize={{ xs: 18 }}
+									component='h4'
+									fontSize={{ xs: 16, md: 18 }}
 									mb={1}
 									color='#010007'
 								>
@@ -103,7 +105,7 @@ const Features = () => {
 								<Typography
 									variant='p'
 									component='p'
-									fontSize={{ xs: 16 }}
+									fontSize={{ xs: 14, md: 16 }}
 								>
 									View charts in real-time and trade your
 									tokens and coins directly from within the
@@ -140,8 +142,8 @@ const Features = () => {
 							<Grid item width='100%'>
 								<Typography
 									variant='h4'
-									component='h3'
-									fontSize={{ xs: 18 }}
+									component='h4'
+									fontSize={{ xs: 16, md: 18 }}
 									mb={1}
 									color='#010007'
 								>
@@ -150,7 +152,7 @@ const Features = () => {
 								<Typography
 									variant='p'
 									component='p'
-									fontSize={{ xs: 16 }}
+									fontSize={{ xs: 14, md: 16 }}
 								>
 									Explore new safe and vetted projects through
 									our Launchpad. Claim project tokens through
@@ -187,8 +189,8 @@ const Features = () => {
 							<Grid item width='100%'>
 								<Typography
 									variant='h4'
-									component='h3'
-									fontSize={{ xs: 18 }}
+									component='h4'
+									fontSize={{ xs: 16, md: 18 }}
 									mb={1}
 									color='#010007'
 								>
@@ -197,7 +199,7 @@ const Features = () => {
 								<Typography
 									variant='p'
 									component='p'
-									fontSize={{ xs: 16 }}
+									fontSize={{ xs: 14, md: 16 }}
 								>
 									Maximize your investment with an easy to use
 									yield farming and staking built into the
@@ -234,8 +236,8 @@ const Features = () => {
 							<Grid item width='100%'>
 								<Typography
 									variant='h4'
-									component='h3'
-									fontSize={{ xs: 18 }}
+									component='h4'
+									fontSize={{ xs: 16, md: 18 }}
 									mb={1}
 									color='#010007'
 								>
@@ -244,7 +246,7 @@ const Features = () => {
 								<Typography
 									variant='p'
 									component='p'
-									fontSize={{ xs: 16 }}
+									fontSize={{ xs: 14, md: 16 }}
 								>
 									We love NFTs and we'll be bringing some
 									awesome utilities and a marketplace for
@@ -281,8 +283,8 @@ const Features = () => {
 							<Grid item width='100%'>
 								<Typography
 									variant='h4'
-									component='h3'
-									fontSize={{ xs: 18 }}
+									component='h4'
+									fontSize={{ xs: 16, md: 18 }}
 									mb={1}
 									color='#010007'
 								>
@@ -291,7 +293,7 @@ const Features = () => {
 								<Typography
 									variant='p'
 									component='p'
-									fontSize={{ xs: 16 }}
+									fontSize={{ xs: 14, md: 16 }}
 								>
 									We're building in social media as a core
 									aspect to the platform to allow for
@@ -328,8 +330,8 @@ const Features = () => {
 							<Grid item width='100%'>
 								<Typography
 									variant='h4'
-									component='h3'
-									fontSize={{ xs: 18 }}
+									component='h4'
+									fontSize={{ xs: 16, md: 18 }}
 									mb={1}
 									color='#010007'
 								>
@@ -338,7 +340,7 @@ const Features = () => {
 								<Typography
 									variant='p'
 									component='p'
-									fontSize={{ xs: 16 }}
+									fontSize={{ xs: 14, md: 16 }}
 								>
 									We're helping projects succeed with the
 									ability to lock their LP tokens and team
@@ -375,8 +377,8 @@ const Features = () => {
 							<Grid item width='100%'>
 								<Typography
 									variant='h4'
-									component='h3'
-									fontSize={{ xs: 18 }}
+									component='h4'
+									fontSize={{ xs: 16, md: 18 }}
 									mb={1}
 									color='#010007'
 								>
@@ -385,7 +387,7 @@ const Features = () => {
 								<Typography
 									variant='p'
 									component='p'
-									fontSize={{ xs: 16 }}
+									fontSize={{ xs: 14, md: 16 }}
 								>
 									See new trading pairs and find the latest
 									trending tokens with our Pair Explorer.
@@ -421,8 +423,8 @@ const Features = () => {
 							<Grid item width='100%'>
 								<Typography
 									variant='h4'
-									component='h3'
-									fontSize={{ xs: 18 }}
+									component='h4'
+									fontSize={{ xs: 16, md: 18 }}
 									mb={1}
 									color='#010007'
 								>
@@ -431,7 +433,7 @@ const Features = () => {
 								<Typography
 									variant='p'
 									component='p'
-									fontSize={{ xs: 16 }}
+									fontSize={{ xs: 14, md: 16 }}
 								>
 									View partnered and featured projects, save
 									them to your favorites, and find the next
@@ -468,8 +470,8 @@ const Features = () => {
 							<Grid item width='100%'>
 								<Typography
 									variant='h4'
-									component='h3'
-									fontSize={{ xs: 18 }}
+									component='h4'
+									fontSize={{ xs: 16, md: 18 }}
 									mb={1}
 									color='#010007'
 								>
@@ -478,7 +480,7 @@ const Features = () => {
 								<Typography
 									variant='p'
 									component='p'
-									fontSize={{ xs: 16 }}
+									fontSize={{ xs: 14, md: 16 }}
 								>
 									With a deep focus on the user, we aim to
 									deliver the best experience for all our

@@ -70,8 +70,9 @@ const About = () => {
 							<Grid item>
 								<Typography
 									variant='h4'
-									component='h3'
+									component='h2'
 									mb={1.5}
+									fontSize={{ xs: 30, md: 36 }}
 								>
 									About Apecron
 								</Typography>
@@ -89,9 +90,9 @@ const About = () => {
 									farming / staking, and much more.
 								</Typography>
 								<Typography
-									variant='h5'
-									component='h4'
-									fontSize={22}
+									variant='h4'
+									component='h3'
+									fontSize={{ xs: 18, md: 22 }}
 									lineHeight={1.5}
 									sx={{
 										fontWeight: '100',
@@ -131,8 +132,8 @@ const About = () => {
 									<Grid item xs={8}>
 										<Typography
 											variant='h4'
-											component='h3'
-											fontSize={{ xs: 18 }}
+											component='h4'
+											fontSize={{ xs: 16, md: 18 }}
 											mb={0.5}
 										>
 											2% for Development
@@ -140,7 +141,7 @@ const About = () => {
 										<Typography
 											variant='p'
 											component='p'
-											fontSize={{ xs: 16 }}
+											fontSize={{ xs: 14, md: 16 }}
 										>
 											This helps cover development, server
 											costs, maintenance and more.
@@ -167,8 +168,8 @@ const About = () => {
 									<Grid item xs={8}>
 										<Typography
 											variant='h4'
-											component='h3'
-											fontSize={{ xs: 18 }}
+											component='h4'
+											fontSize={{ xs: 16, md: 18 }}
 											mb={0.5}
 										>
 											2% for Marketing
@@ -176,7 +177,7 @@ const About = () => {
 										<Typography
 											variant='p'
 											component='p'
-											fontSize={{ xs: 16 }}
+											fontSize={{ xs: 14, md: 16 }}
 										>
 											To further expand and reach more
 											users, 2% is set aside for marketing
@@ -204,8 +205,8 @@ const About = () => {
 									<Grid item xs={8}>
 										<Typography
 											variant='h4'
-											component='h3'
-											fontSize={{ xs: 18 }}
+											component='h4'
+											fontSize={{ xs: 16, md: 18 }}
 											mb={0.5}
 										>
 											5% for Liquidity
@@ -213,7 +214,7 @@ const About = () => {
 										<Typography
 											variant='p'
 											component='p'
-											fontSize={{ xs: 16 }}
+											fontSize={{ xs: 14, md: 16 }}
 										>
 											Each transaction adds 5% to our
 											liquidity thus creating more

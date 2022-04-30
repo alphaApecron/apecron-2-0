@@ -53,11 +53,11 @@ const Locker = () => {
 							xs={6}
 						>
 							<Typography
-								variant='h4'
+								variant='h2'
 								component='h3'
-								fontSize={{ xs: 30 }}
+								fontSize={{ xs: 30, md: 36 }}
+								mb={1}
 								mt={2}
-								mb={3}
 								color='#010007'
 							>
 								The Locker
@@ -65,7 +65,7 @@ const Locker = () => {
 							<Typography
 								variant='p'
 								component='p'
-								fontSize={{ xs: 16 }}
+								fontSize={{ xs: 14, md: 16 }}
 								mb={3}
 								lineHeight={1.5}
 							>
@@ -102,8 +102,8 @@ const Locker = () => {
 								<Grid item width='100%'>
 									<Typography
 										variant='h4'
-										component='h3'
-										fontSize={{ xs: 18 }}
+										component='h4'
+										fontSize={{ xs: 16, md: 18 }}
 										mb={1}
 										color='#010007'
 									>
@@ -112,7 +112,7 @@ const Locker = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={{ xs: 16 }}
+										fontSize={{ xs: 18, md: 16 }}
 									>
 										Our locker platform will securely lock
 										your LP tokens for any customized
@@ -154,8 +154,8 @@ const Locker = () => {
 								<Grid item width='100%'>
 									<Typography
 										variant='h4'
-										component='h3'
-										fontSize={{ xs: 18 }}
+										component='h4'
+										fontSize={{ xs: 16, md: 18 }}
 										mb={1}
 										color='#010007'
 									>
@@ -164,7 +164,7 @@ const Locker = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={{ xs: 16 }}
+										fontSize={{ xs: 14, md: 16 }}
 									>
 										Our platform securely vests your teams
 										tokens for any specified duration.
@@ -180,11 +180,12 @@ const Locker = () => {
 							<Box mt={4} onClick={preventDefault}>
 								<Tooltip title='Launching Soon' placement='top'>
 									<Button
-										className='btn-primary'
+										className='btn-primary disabled'
 										variant='outlined'
 										href='#'
+										disabled
 									>
-										Go to Locker
+										Go to Locker - coming soon
 									</Button>
 								</Tooltip>
 							</Box>

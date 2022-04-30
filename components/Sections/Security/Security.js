@@ -27,7 +27,8 @@ const Platform = () => {
 				width='100%'
 				sx={{
 					px: { xs: 2, md: 8 },
-					py: { xs: 4, md: 8 },
+					pt: { xs: 2, md: 4 },
+					pb: { xs: 4, md: 8 },
 				}}
 			>
 				<Container maxWidth='lg'>
@@ -68,9 +69,10 @@ const Platform = () => {
 							md={6}
 						>
 							<Typography
-								variant='h4'
+								variant='h3'
 								component='h3'
-								fontSize={30}
+								fontSize={{ xs: 24, md: 30 }}
+								lineHeight={{ xs: 1.375, md: 1.5 }}
 								mt={2}
 								mb={3}
 							>
@@ -80,8 +82,8 @@ const Platform = () => {
 							<Typography
 								variant='p'
 								component='p'
-								fontSize={{ xs: 18 }}
-								mb={3}
+								fontSize={{ xs: 14, md: 16 }}
+								mb={2}
 								lineHeight={1.5}
 							>
 								We provide enterprise level security to ensure
@@ -93,7 +95,7 @@ const Platform = () => {
 							<Typography
 								variant='p'
 								component='p'
-								fontSize={{ xs: 18 }}
+								fontSize={{ xs: 14, md: 16 }}
 								lineHeight={1.5}
 							>
 								You know you will get the best experience when

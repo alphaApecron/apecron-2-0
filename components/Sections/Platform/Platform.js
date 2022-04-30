@@ -33,6 +33,7 @@ const Platform = () => {
 				sx={{
 					px: { xs: 2, md: 8 },
 					py: { xs: 4, md: 8 },
+					py: { xs: 4, md: 8 },
 					borderTop: '1px solid rgba(255,255,255,0.1)',
 				}}
 			>
@@ -47,14 +48,19 @@ const Platform = () => {
 						alignItems='start'
 						mb={{ xs: 0, md: 7 }}
 					>
-						<Typography variant='h2' component='h3' mb={1.5}>
+						<Typography
+							variant='h2'
+							component='h3'
+							mb={1}
+							fontSize={{ xs: 30, md: 36 }}
+						>
 							The Platform
 						</Typography>
 						<Typography
 							variant='p'
 							component='p'
-							fontSize={{ xs: 14, md: 18 }}
-							lineHeight={{ xs: 1.75, md: 1.5 }}
+							fontSize={{ xs: 14, md: 16 }}
+							lineHeight={{ xs: 1.5, md: 1.5 }}
 							mb={{ xs: 1, md: 3 }}
 						>
 							The main hub of the Apecron platform is the
@@ -115,8 +121,8 @@ const Platform = () => {
 								<Grid item width='100%'>
 									<Typography
 										variant='h4'
-										component='h3'
-										fontSize={{ xs: 18 }}
+										component='h4'
+										fontSize={{ xs: 16, md: 18 }}
 										mb={1}
 									>
 										Designed for responsive
@@ -124,7 +130,7 @@ const Platform = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={{ xs: 16 }}
+										fontSize={{ xs: 14, md: 16 }}
 									>
 										Apecron works on any device: desktop,
 										tablet or mobile.
@@ -159,8 +165,8 @@ const Platform = () => {
 								<Grid item width='100%'>
 									<Typography
 										variant='h4'
-										component='h3'
-										fontSize={{ xs: 18 }}
+										component='h4'
+										fontSize={{ xs: 16, md: 18 }}
 										mb={1}
 									>
 										Watchlists, Favorites, Trending, and
@@ -169,7 +175,7 @@ const Platform = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={{ xs: 16 }}
+										fontSize={{ xs: 14, md: 16 }}
 									>
 										Don't lose track of your favorite
 										projects and tokens. Easily save them to
@@ -207,8 +213,8 @@ const Platform = () => {
 								<Grid item width='100%'>
 									<Typography
 										variant='h4'
-										component='h3'
-										fontSize={{ xs: 18 }}
+										component='h4'
+										fontSize={{ xs: 16, md: 18 }}
 										mb={1}
 									>
 										New Pair Explorer with contract scanner
@@ -216,7 +222,7 @@ const Platform = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={{ xs: 16 }}
+										fontSize={{ xs: 14, md: 16 }}
 									>
 										Don't be tricked by rugs and scams,
 										utilize our platform to find new
@@ -254,8 +260,8 @@ const Platform = () => {
 								<Grid item width='100%'>
 									<Typography
 										variant='h4'
-										component='h3'
-										fontSize={{ xs: 18 }}
+										component='h4'
+										fontSize={{ xs: 16, md: 18 }}
 										mb={1}
 									>
 										Integrated Swap
@@ -263,7 +269,7 @@ const Platform = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={{ xs: 16 }}
+										fontSize={{ xs: 14, md: 16 }}
 									>
 										You can easily buy and sell tokens
 										through our easy to use and fully
@@ -298,8 +304,8 @@ const Platform = () => {
 								<Grid item width='100%'>
 									<Typography
 										variant='h4'
-										component='h3'
-										fontSize={{ xs: 18 }}
+										component='h4'
+										fontSize={{ xs: 16, md: 18 }}
 										mb={1}
 									>
 										Portfolio tracking
@@ -307,7 +313,7 @@ const Platform = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={{ xs: 16 }}
+										fontSize={{ xs: 14, md: 16 }}
 									>
 										See all your trading history and data
 										right from our application! Track your

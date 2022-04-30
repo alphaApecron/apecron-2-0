@@ -11,7 +11,7 @@ const ApecronThemeDefault = createTheme({
 			'@media (min-width:600px)': {
 				fontSize: '3.5rem',
 			},
-			'@media (min-width:821px)': {
+			'@media (min-width:900px)': {
 				fontSize: '4rem',
 			},
 		},

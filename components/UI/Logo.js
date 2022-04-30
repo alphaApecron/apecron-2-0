@@ -21,7 +21,7 @@ const onLinkClick = (e) => {
 
 const Logo = () => {
 	return (
-		<Grid item xs={12} md={10}>
+		<Grid item xs={12} md={10} component='h1'>
 			<Link
 				href='#'
 				goto='masthead'

@@ -43,7 +43,9 @@ const Launchpad = () => {
 					>
 						<Typography
 							variant='h2'
-							component='h3'
+							component='h2'
+							fontSize={{ xs: 30, md: 48 }}
+							lineHeight={{ xs: 1.375, md: 1.5 }}
 							color='#010007'
 							fontWeight='300'
 						>
@@ -71,11 +73,12 @@ const Launchpad = () => {
 							xs={6}
 						>
 							<Typography
-								variant='h4'
+								variant='h2'
 								component='h3'
-								fontSize={{ xs: 30 }}
+								fontSize={{ xs: 30, md: 36 }}
+								lineHeight={{ xs: 1.375, md: 1.5 }}
 								mt={2}
-								mb={3}
+								mb={1}
 								color='#010007'
 							>
 								The Launchpad
@@ -83,7 +86,7 @@ const Launchpad = () => {
 							<Typography
 								variant='p'
 								component='p'
-								fontSize={{ xs: 16 }}
+								fontSize={{ xs: 14, md: 16 }}
 								mb={3}
 								lineHeight={1.5}
 							>
@@ -125,8 +128,8 @@ const Launchpad = () => {
 								<Grid item width='100%'>
 									<Typography
 										variant='h4'
-										component='h3'
-										fontSize={{ xs: 18 }}
+										component='h4'
+										fontSize={{ xs: 16, md: 18 }}
 										mb={1}
 										color='#010007'
 									>
@@ -135,7 +138,7 @@ const Launchpad = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={{ xs: 16 }}
+										fontSize={{ xs: 14, md: 16 }}
 									>
 										We pride ourselves in bringing the best
 										secure projects to our platform and
@@ -174,7 +177,7 @@ const Launchpad = () => {
 									<Typography
 										variant='h4'
 										component='h3'
-										fontSize={{ xs: 18 }}
+										fontSize={{ xs: 16, md: 18 }}
 										mb={1}
 										color='#010007'
 									>
@@ -183,7 +186,7 @@ const Launchpad = () => {
 									<Typography
 										variant='p'
 										component='p'
-										fontSize={{ xs: 16 }}
+										fontSize={{ xs: 14, md: 16 }}
 									>
 										We deliver new projects to the Apecron
 										platform exclusively before they are
@@ -200,11 +203,12 @@ const Launchpad = () => {
 							<Box mt={4} onClick={preventDefault}>
 								<Tooltip title='Launching Soon' placement='top'>
 									<Button
-										className='btn-primary'
-										variant='outlined'
+										className='btn-primary disabled'
+										variant='disabled'
 										href='#'
+										disabled
 									>
-										Go to Launchpad
+										Go to Launchpad - coming soon
 									</Button>
 								</Tooltip>
 							</Box>
