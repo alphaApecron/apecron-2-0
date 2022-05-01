@@ -1,13 +1,4 @@
-import {
-	Container,
-	Typography,
-	Box,
-	Grid,
-	Item,
-	Link,
-	Button,
-	Tooltip,
-} from '@mui/material';
+import { Container, Typography, Box, Grid, Button } from '@mui/material';
 import React from 'react';
 import Image from 'next/image';
 
@@ -109,15 +100,13 @@ const Platform = () => {
 								and performance!
 							</Typography>
 							<Box mt={4} onClick={preventDefault}>
-								<Tooltip title='Launching Soon' placement='top'>
-									<Button
-										className='btn-primary'
-										variant='outlined'
-										href='#'
-									>
-										Launch App - coming soon
-									</Button>
-								</Tooltip>
+								<Button
+									className='btn-primary'
+									variant='outlined'
+									href='#'
+								>
+									Launch App - coming soon
+								</Button>
 							</Box>
 						</Grid>
 						{/* End: Security Highlights */}

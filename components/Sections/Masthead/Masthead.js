@@ -123,6 +123,7 @@ const Masthead = () => {
 						<Image
 							src={PlatformPreview}
 							width='1175px'
+							priority={true}
 							alt='Apecron is a portfolio tracking and trading management platform'
 						/>
 					</Box>

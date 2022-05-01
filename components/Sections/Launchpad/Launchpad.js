@@ -1,13 +1,4 @@
-import {
-	Container,
-	Typography,
-	Box,
-	Grid,
-	Item,
-	Link,
-	Button,
-	Tooltip,
-} from '@mui/material';
+import { Container, Typography, Box, Grid, Button } from '@mui/material';
 import React from 'react';
 import Image from 'next/image';
 
@@ -205,16 +196,14 @@ const Launchpad = () => {
 							{/* End: Launchpad Feature Item*/}
 
 							<Box mt={4} onClick={preventDefault}>
-								<Tooltip title='Launching Soon' placement='top'>
-									<Button
-										className='btn-primary disabled'
-										variant='disabled'
-										href='#'
-										disabled
-									>
-										Go to Launchpad - coming soon
-									</Button>
-								</Tooltip>
+								<Button
+									className='btn-primary disabled'
+									variant='disabled'
+									href='#'
+									disabled
+								>
+									Go to Launchpad - coming soon
+								</Button>
 							</Box>
 						</Grid>
 						{/* End: Launchpad Highlights */}

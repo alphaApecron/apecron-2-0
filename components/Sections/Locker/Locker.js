@@ -182,16 +182,14 @@ const Locker = () => {
 							{/* End: Locker Feature Item*/}
 
 							<Box mt={4} onClick={preventDefault}>
-								<Tooltip title='Launching Soon' placement='top'>
-									<Button
-										className='btn-primary disabled'
-										variant='outlined'
-										href='#'
-										disabled
-									>
-										Go to Locker - coming soon
-									</Button>
-								</Tooltip>
+								<Button
+									className='btn-primary disabled'
+									variant='outlined'
+									href='#'
+									disabled
+								>
+									Go to Locker - coming soon
+								</Button>
 							</Box>
 						</Grid>
 						{/* End: Locker Highlights */}

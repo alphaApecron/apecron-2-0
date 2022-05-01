@@ -1,13 +1,4 @@
-import {
-	Container,
-	Typography,
-	Box,
-	Grid,
-	Item,
-	Link,
-	Button,
-	Tooltip,
-} from '@mui/material';
+import { Container, Typography, Box, Grid } from '@mui/material';
 import React from 'react';
 import Image from 'next/image';
 
@@ -21,7 +12,6 @@ import LPIcon from '../../../public/images/icons/about-filter.svg';
 import styles from './About.module.scss';
 const About = () => {
 	const preventDefault = (event) => event.preventDefault();
-
 	return (
 		<>
 			<Box

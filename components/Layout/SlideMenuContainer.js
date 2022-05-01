@@ -105,7 +105,7 @@ const SlideMenuContainer = (props) => {
 					alignItems='center'
 					pt={2}
 				>
-					<Grid item xs={'fit'}>
+					<Grid item xs='auto'>
 						<Link
 							href='https://telegram.me/apecron'
 							underline='none'
@@ -119,7 +119,7 @@ const SlideMenuContainer = (props) => {
 							/>
 						</Link>
 					</Grid>
-					<Grid item xs={'fit'}>
+					<Grid item xs='auto'>
 						<Link
 							href='https://discord.gg/TBHgPj7PHS'
 							underline='none'
@@ -133,7 +133,7 @@ const SlideMenuContainer = (props) => {
 							/>
 						</Link>
 					</Grid>
-					<Grid item xs={'fit'}>
+					<Grid item xs='auto'>
 						<Link
 							href='https://twitter.com/apecronofficial'
 							underline='none'
@@ -147,7 +147,7 @@ const SlideMenuContainer = (props) => {
 							/>
 						</Link>
 					</Grid>
-					<Grid item xs={'fit'}>
+					<Grid item xs='auto'>
 						<Link
 							href='https://www.instagram.com/apecronofficial'
 							underline='none'
@@ -161,7 +161,7 @@ const SlideMenuContainer = (props) => {
 							/>
 						</Link>
 					</Grid>
-					<Grid item xs={'fit'}>
+					<Grid item xs='auto'>
 						<Link
 							href='https://apecronofficial.medium.com/'
 							underline='none'
