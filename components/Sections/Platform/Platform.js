@@ -122,7 +122,9 @@ const Platform = () => {
 									<Typography
 										variant='h4'
 										component='h4'
-										fontSize={{ xs: 16, md: 18 }}
+										fontSize={{ xs: 14, md: 16 }}
+										textTransform='uppercase'
+										fontWeight='900'
 										mb={1}
 									>
 										Designed for responsive
@@ -166,7 +168,9 @@ const Platform = () => {
 									<Typography
 										variant='h4'
 										component='h4'
-										fontSize={{ xs: 16, md: 18 }}
+										fontSize={{ xs: 14, md: 16 }}
+										textTransform='uppercase'
+										fontWeight='900'
 										mb={1}
 									>
 										Watchlists, Favorites, Trending, and
@@ -214,7 +218,9 @@ const Platform = () => {
 									<Typography
 										variant='h4'
 										component='h4'
-										fontSize={{ xs: 16, md: 18 }}
+										fontSize={{ xs: 14, md: 16 }}
+										textTransform='uppercase'
+										fontWeight='900'
 										mb={1}
 									>
 										New Pair Explorer with contract scanner
@@ -261,7 +267,9 @@ const Platform = () => {
 									<Typography
 										variant='h4'
 										component='h4'
-										fontSize={{ xs: 16, md: 18 }}
+										fontSize={{ xs: 14, md: 16 }}
+										textTransform='uppercase'
+										fontWeight='900'
 										mb={1}
 									>
 										Integrated Swap
@@ -305,7 +313,9 @@ const Platform = () => {
 									<Typography
 										variant='h4'
 										component='h4'
-										fontSize={{ xs: 16, md: 18 }}
+										fontSize={{ xs: 14, md: 16 }}
+										textTransform='uppercase'
+										fontWeight='900'
 										mb={1}
 									>
 										Portfolio tracking

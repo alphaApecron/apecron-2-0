@@ -129,7 +129,9 @@ const Launchpad = () => {
 									<Typography
 										variant='h4'
 										component='h4'
-										fontSize={{ xs: 16, md: 18 }}
+										fontSize={{ xs: 14, md: 16 }}
+										textTransform='uppercase'
+										fontWeight='900'
 										mb={1}
 										color='#010007'
 									>
@@ -177,7 +179,9 @@ const Launchpad = () => {
 									<Typography
 										variant='h4'
 										component='h3'
-										fontSize={{ xs: 16, md: 18 }}
+										fontSize={{ xs: 14, md: 16 }}
+										textTransform='uppercase'
+										fontWeight='900'
 										mb={1}
 										color='#010007'
 									>

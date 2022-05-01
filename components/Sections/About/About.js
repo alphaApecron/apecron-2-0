@@ -136,7 +136,9 @@ const About = () => {
 										<Typography
 											variant='h4'
 											component='h4'
-											fontSize={{ xs: 16, md: 18 }}
+											fontSize={{ xs: 14, md: 16 }}
+											textTransform='uppercase'
+											fontWeight='900'
 											mb={0.5}
 										>
 											2% for Development
@@ -172,7 +174,9 @@ const About = () => {
 										<Typography
 											variant='h4'
 											component='h4'
-											fontSize={{ xs: 16, md: 18 }}
+											fontSize={{ xs: 14, md: 16 }}
+											textTransform='uppercase'
+											fontWeight='900'
 											mb={0.5}
 										>
 											2% for Marketing
@@ -209,7 +213,9 @@ const About = () => {
 										<Typography
 											variant='h4'
 											component='h4'
-											fontSize={{ xs: 16, md: 18 }}
+											fontSize={{ xs: 14, md: 16 }}
+											textTransform='uppercase'
+											fontWeight='900'
 											mb={0.5}
 										>
 											5% for Liquidity

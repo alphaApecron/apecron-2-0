@@ -96,9 +96,11 @@ const Features = () => {
 								<Typography
 									variant='h4'
 									component='h4'
-									fontSize={{ xs: 16, md: 18 }}
+									fontSize={{ xs: 14, md: 16 }}
 									mb={1}
 									color='#010007'
+									textTransform='uppercase'
+									fontWeight='900'
 								>
 									Live Charts / Trading
 								</Typography>
@@ -143,9 +145,11 @@ const Features = () => {
 								<Typography
 									variant='h4'
 									component='h4'
-									fontSize={{ xs: 16, md: 18 }}
+									fontSize={{ xs: 14, md: 16 }}
 									mb={1}
 									color='#010007'
+									textTransform='uppercase'
+									fontWeight='900'
 								>
 									Launchpad
 								</Typography>
@@ -190,9 +194,11 @@ const Features = () => {
 								<Typography
 									variant='h4'
 									component='h4'
-									fontSize={{ xs: 16, md: 18 }}
+									fontSize={{ xs: 14, md: 16 }}
 									mb={1}
 									color='#010007'
+									textTransform='uppercase'
+									fontWeight='900'
 								>
 									Yield Farming/Staking
 								</Typography>
@@ -237,9 +243,11 @@ const Features = () => {
 								<Typography
 									variant='h4'
 									component='h4'
-									fontSize={{ xs: 16, md: 18 }}
+									fontSize={{ xs: 14, md: 16 }}
 									mb={1}
 									color='#010007'
+									textTransform='uppercase'
+									fontWeight='900'
 								>
 									NFTs &amp; Marketplace
 								</Typography>
@@ -284,9 +292,11 @@ const Features = () => {
 								<Typography
 									variant='h4'
 									component='h4'
-									fontSize={{ xs: 16, md: 18 }}
+									fontSize={{ xs: 14, md: 16 }}
 									mb={1}
 									color='#010007'
+									textTransform='uppercase'
+									fontWeight='900'
 								>
 									Social Media Platform
 								</Typography>
@@ -331,9 +341,11 @@ const Features = () => {
 								<Typography
 									variant='h4'
 									component='h4'
-									fontSize={{ xs: 16, md: 18 }}
+									fontSize={{ xs: 14, md: 16 }}
 									mb={1}
 									color='#010007'
+									textTransform='uppercase'
+									fontWeight='900'
 								>
 									Token Locker
 								</Typography>
@@ -378,9 +390,11 @@ const Features = () => {
 								<Typography
 									variant='h4'
 									component='h4'
-									fontSize={{ xs: 16, md: 18 }}
+									fontSize={{ xs: 14, md: 16 }}
 									mb={1}
 									color='#010007'
+									textTransform='uppercase'
+									fontWeight='900'
 								>
 									Pair Explorer
 								</Typography>
@@ -424,9 +438,11 @@ const Features = () => {
 								<Typography
 									variant='h4'
 									component='h4'
-									fontSize={{ xs: 16, md: 18 }}
+									fontSize={{ xs: 14, md: 16 }}
 									mb={1}
 									color='#010007'
+									textTransform='uppercase'
+									fontWeight='900'
 								>
 									Featured Projects
 								</Typography>
@@ -471,11 +487,13 @@ const Features = () => {
 								<Typography
 									variant='h4'
 									component='h4'
-									fontSize={{ xs: 16, md: 18 }}
+									fontSize={{ xs: 14, md: 16 }}
 									mb={1}
 									color='#010007'
+									textTransform='uppercase'
+									fontWeight='900'
 								>
-									Unparalleled User Experience
+									User Experience Focused
 								</Typography>
 								<Typography
 									variant='p'
