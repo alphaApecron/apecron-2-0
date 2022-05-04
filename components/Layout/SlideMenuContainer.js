@@ -189,7 +189,7 @@ const SlideMenuContainer = (props) => {
 						Contract Address:
 					</Typography>
 					<Typography variant='p' component='p' fontSize={{ xs: 14 }}>
-						0X09AAE6C66BC670016801E34D19B1775B038B6C43
+						0x09Aae6c66BC670016801e34d19B1775b038B6C43
 					</Typography>
 				</Box>
 				<Box position='absolute' top='10px' right='10px'>
