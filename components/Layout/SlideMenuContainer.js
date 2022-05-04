@@ -7,6 +7,7 @@ import DiscordIcon from '../../public/images/social/discord-color.svg';
 import TwitterIcon from '../../public/images/social/twitter-color.svg';
 import MediumIcon from '../../public/images/social/medium-color.svg';
 import InstagramIcon from '../../public/images/social/instagram-color.svg';
+import RedditIcon from '../../public/images/social/reddit-color.svg';
 import styles from '../UI/Layout.module.scss';
 
 const SlideMenuContainer = (props) => {
@@ -95,12 +96,39 @@ const SlideMenuContainer = (props) => {
 							Contact
 						</Link>
 					</Box>
+					<Box className={styles['nav-item']} display='inline-block'>
+						<Link
+							href='/docs/apecron.pdf'
+							underline='none'
+							target='_blank'
+						>
+							Whitepaper
+						</Link>
+					</Box>
+					<Box className={styles['nav-item']} display='inline-block'>
+						<Link
+							href='/docs/apecron_audit.pdf'
+							underline='none'
+							target='_blank'
+						>
+							Audit
+						</Link>
+					</Box>
+					<Box className={styles['nav-item']} display='inline-block'>
+						<Link
+							href='https://mm.finance/swap?inputCurrency=0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23&outputCurrency=0x09aae6c66bc670016801e34d19b1775b038b6c43'
+							target='_blank'
+							underline='none'
+						>
+							Buy Now
+						</Link>
+					</Box>
 				</Box>
 				<Grid
 					container
 					columns={10}
 					direction='row'
-					columnSpacing={3}
+					columnSpacing={2}
 					justifyContent='center'
 					alignItems='center'
 					pt={2}
@@ -172,6 +200,20 @@ const SlideMenuContainer = (props) => {
 								width='32'
 								height='32'
 								alt='Join Apecron on Medium'
+							/>
+						</Link>
+					</Grid>
+					<Grid item xs='auto'>
+						<Link
+							href='https://www.reddit.com/r/Apecron/'
+							underline='none'
+							target='_blank'
+						>
+							<Image
+								src={RedditIcon}
+								width='32'
+								height='32'
+								alt='Join Apecron on Reddit'
 							/>
 						</Link>
 					</Grid>

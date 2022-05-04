@@ -100,15 +100,7 @@ const Footer = () => {
 								Quick Links
 							</Typography>
 							<Box display='flex' flexDirection='column'>
-								<Link
-									href='/docs/apecron.pdf'
-									target='_blank'
-									underline='none'
-									color='#fff'
-									mb={0.75}
-								>
-									Whitepaper
-								</Link>
+								
 								<Link
 									href='https://twitter.com/apecronofficial'
 									target='_blank'
@@ -153,6 +145,14 @@ const Footer = () => {
 								>
 									Medium
 								</Link>
+								<Link
+									href='https://www.reddit.com/r/Apecron/'
+									target='_blank'
+									underline='none'
+									color='#fff'
+								>
+									Reddit
+								</Link>
 							</Box>
 						</Grid>
 						{/*  Footer Links/Resources */}
@@ -171,9 +171,36 @@ const Footer = () => {
 								fontSize={20}
 								mb={1}
 							>
-								Get in Touch
+								More Info
 							</Typography>
 							<Box display='flex' flexDirection='column' mb={1}>
+								<Link
+									href='https://mm.finance/swap?inputCurrency=0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23&outputCurrency=0x09aae6c66bc670016801e34d19b1775b038b6c43'
+									target='_blank'
+									underline='none'
+									color='#fff'
+									mb={0.75}
+								>
+									Buy $Apecron
+								</Link>
+								<Link
+									href='/docs/apecron.pdf'
+									target='_blank'
+									underline='none'
+									color='#fff'
+									mb={0.75}
+								>
+									Whitepaper
+								</Link>
+								<Link
+									href='/docs/apecron_audit.pdf'
+									target='_blank'
+									underline='none'
+									color='#fff'
+									mb={0.75}
+								>
+									Audit
+								</Link>
 								<Link
 									href='mailto:info@apecron.com'
 									underline='none'
