@@ -74,40 +74,55 @@ const Masthead = () => {
 									justifyContent: 'center',
 									alignItems: 'center',
 									typography: 'body1',
-									flexDirection: { xs: 'column', md: 'column' },
+									flexDirection: {
+										xs: 'column',
+										md: 'column',
+									},
 								}}
 							>
-
 								<Box
 									sx={{
 										display: 'flex',
 										justifyContent: 'center',
 										alignItems: 'center',
 										typography: 'body1',
-										flexDirection: { xs: 'column', md: 'row' },
-										marginBottom: {xs: '10px'}
-
+										flexDirection: {
+											xs: 'column',
+											md: 'row',
+										},
+										marginBottom: { xs: '10px' },
 									}}
 								>
-								<Tooltip title='Launching Soon' placement='top'>
-								<	Button
-										className='btn-primary'
-										variant='outlined'
-										href='#'
-										component='a'
-										onClick={preventDefault}
-										display='inline-block'
-										sx={{
-											width: {xs: '100%', md: 'fit-content'},
-											marginRight: {xs: '0', md: '10px'},
-											marginBottom: {xs: '5px', md: '0'},
-										}}
+									<Tooltip
+										title='Now in Beta'
+										placement='top'
 									>
-										Platform - coming soon
-									</Button>
-								</Tooltip>
+										<Button
+											className='btn-primary'
+											href='https://app.apecron.com'
+											component='a'
+											target='_blank'
+											display='inline-block'
+											sx={{
+												width: {
+													xs: '100%',
+													md: 'fit-content',
+												},
+												marginRight: {
+													xs: '0',
+													md: '10px',
+												},
+												marginBottom: {
+													xs: '5px',
+													md: '0',
+												},
+											}}
+										>
+											Platform
+										</Button>
+									</Tooltip>
 
-								<Button
+									<Button
 										className='btn-secondary'
 										variant='outlined'
 										href='https://mm.finance/swap?inputCurrency=0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23&outputCurrency=0x09aae6c66bc670016801e34d19b1775b038b6c43'
@@ -115,7 +130,10 @@ const Masthead = () => {
 										target='_blank'
 										display='inline-block'
 										sx={{
-											width: {xs: '100%', md: 'fit-content'},
+											width: {
+												xs: '100%',
+												md: 'fit-content',
+											},
 											color: '#fff',
 											borderColor: '#fff',
 											transition: 'all 0.3s ease',
@@ -136,7 +154,10 @@ const Masthead = () => {
 										justifyContent: 'center',
 										alignItems: 'center',
 										typography: 'body1',
-										flexDirection: { xs: 'column', md: 'row' },
+										flexDirection: {
+											xs: 'column',
+											md: 'row',
+										},
 									}}
 								>
 									<Button
@@ -149,12 +170,21 @@ const Masthead = () => {
 											color: '#fff',
 											borderColor: '#fff',
 											transition: 'all 0.3s ease',
-											borderBottom: {xs: 'none', md: '1px solid #fff'},
-											padding: {xs: '0.75rem 1.875rem!important', md:'5px 15px 5px!important'},
+											borderBottom: {
+												xs: 'none',
+												md: '1px solid #fff',
+											},
+											padding: {
+												xs: '0.75rem 1.875rem!important',
+												md: '5px 15px 5px!important',
+											},
 											display: 'inline-block',
 											marginRight: '10px',
 											borderRadius: 0,
-											width: {xs: '100%', md: 'fit-content'},
+											width: {
+												xs: '100%',
+												md: 'fit-content',
+											},
 											':hover': {
 												color: 'rgba(255,255,255,0.7)',
 												borderColor:
@@ -174,10 +204,16 @@ const Masthead = () => {
 											color: '#fff',
 											borderColor: '#fff',
 											transition: 'all 0.3s ease',
-											borderBottom: {xs: 'none', md: '1px solid #fff'},
+											borderBottom: {
+												xs: 'none',
+												md: '1px solid #fff',
+											},
 											padding: ' 5px 15px 5px!important',
 											borderRadius: 0,
-											width: {xs: '100%', md: 'fit-content'},
+											width: {
+												xs: '100%',
+												md: 'fit-content',
+											},
 											':hover': {
 												color: 'rgba(255,255,255,0.7)',
 												borderColor:

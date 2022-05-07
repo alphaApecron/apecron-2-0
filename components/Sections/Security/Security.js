@@ -103,9 +103,11 @@ const Platform = () => {
 								<Button
 									className='btn-primary'
 									variant='outlined'
-									href='#'
+									href='https://app.apecron.com'
+									component='a'
+									target='_blank'
 								>
-									Launch App - coming soon
+									Launch App
 								</Button>
 							</Box>
 						</Grid>
