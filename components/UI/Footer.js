@@ -202,12 +202,12 @@ const Footer = () => {
 									Audit
 								</Link>
 								<Link
-									href='mailto:info@apecron.com'
+									href='mailto:support@apecron.com'
 									underline='none'
 									color='#fff'
 									mb={0.5}
 								>
-									info@apecron.com
+									support@apecron.com
 								</Link>
 							</Box>
 							<Typography
