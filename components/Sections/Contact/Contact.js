@@ -99,13 +99,13 @@ const Contact = () => {
 							</Grid>
 							<Grid item xs={8}>
 								<Link
-									href='mailto:info@apecron.com'
+									href='mailto:support@apecron.com'
 									underline='none'
 									fontSize={{ xs: 18 }}
 									fontWeight='600'
 									color='#010007'
 								>
-									info@apecron.com
+									support@apecron.com
 								</Link>
 							</Grid>
 						</Grid>
