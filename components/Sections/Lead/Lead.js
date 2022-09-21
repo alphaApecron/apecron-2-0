@@ -56,7 +56,7 @@ const Lead = () => {
 									src={CronosIcon}
 									width='60'
 									height='60'
-									alt='Apecron is a revolutionary ecosystem of DeFi products built for Cronos'
+									alt='Apecron is a revolutionary ecosystem of DeFi products built for Cronos, ETH and beyond'
 								/>
 							</Grid>
 							<Grid item xs>
@@ -65,11 +65,11 @@ const Lead = () => {
 									component='h3'
 									fontSize={{ xs: 22, md: 22, lg: 30 }}
 								>
-									Built for Cronos
+									Built for Cronos, ETH and beyond
 								</Typography>
 								<Typography variant='p' component='p'>
 									A revolutionary ecosystem of DeFi products
-									for CRO
+									for CRO, ETH and beyond
 								</Typography>
 							</Grid>
 						</Grid>
