@@ -53,7 +53,7 @@ const Masthead = () => {
 								component='h2'
 								fontSize={{ xs: 24, sm: 36, md: 60 }}
 							>
-								The Future of DeFi on Cronos
+								The Future of DeFi on Cronos, ETH and beyond
 							</Typography>
 							<Box sx={{ padding: { xs: 0, md: '0 100px' } }}>
 								<Typography
@@ -61,9 +61,9 @@ const Masthead = () => {
 									component='p'
 									fontSize={{ xs: 14, md: 18 }}
 								>
-									World-Class DeFi Portfolio Management
+									World-Class Launchpad
 									Simplified. <br />
-									Chart Tracking/Trading - Launchpad - Yield
+									Chart Tracking/Trading - DeFi Portfolio Management - Yield
 									Farm/Staking - Token Locker - Social Media
 									Platform
 								</Typography>
@@ -99,7 +99,7 @@ const Masthead = () => {
 									>
 										<Button
 											className='btn-primary'
-											href='https://app.apecron.com'
+											href='#'
 											component='a'
 											target='_blank'
 											display='inline-block'
@@ -236,7 +236,7 @@ const Masthead = () => {
 							src={PlatformPreview}
 							width='1175px'
 							priority={true}
-							alt='Apecron is a portfolio tracking and trading management platform'
+							alt='Apecron is a trading management and portfolio tracking platform'
 						/>
 					</Box>
 				</Container>
