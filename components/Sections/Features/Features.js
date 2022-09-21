@@ -257,8 +257,7 @@ const Features = () => {
 									fontSize={{ xs: 14, md: 16 }}
 								>
 									We love NFTs and we'll be bringing some
-									awesome utilities and a marketplace for
-									Cronos!
+									awesome utilities and a marketplace
 								</Typography>
 							</Grid>
 						</Grid>
