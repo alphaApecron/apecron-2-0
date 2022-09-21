@@ -48,7 +48,7 @@ const Footer = () => {
 								<Image
 									src={FooterLogo}
 									width='72'
-									alt='Apecron is a revolutionary ecosystem of DeFi products built for Cronos'
+									alt='Apecron is a revolutionary ecosystem of DeFi products built for Cronos, ETH and beyond'
 								/>
 							</Grid>
 							<Grid item xs>
@@ -58,7 +58,7 @@ const Footer = () => {
 									fontSize={24}
 									mb={2}
 								>
-									Apecron - The Future Of DEX on Cronos
+									Apecron - The Future Of DEX on Cronos, ETH and beyond
 								</Typography>
 								<Typography
 									variant='p'
@@ -67,7 +67,7 @@ const Footer = () => {
 									lineHeight={{ xs: 1.4, md: 1.6 }}
 								>
 									Apecron is innovating and delivering DeFi
-									solutions on Cronos Chain that includes a
+									solutions on that includes a
 									Dex and portfolio / trading management
 									platform, secure project launchpad,
 									liquidity locker, and NFT products to bring
