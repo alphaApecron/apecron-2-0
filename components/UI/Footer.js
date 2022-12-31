@@ -174,15 +174,7 @@ const Footer = () => {
 								More Info
 							</Typography>
 							<Box display='flex' flexDirection='column' mb={1}>
-								<Link
-									href='https://mm.finance/swap?inputCurrency=0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23&outputCurrency=0x09aae6c66bc670016801e34d19b1775b038b6c43'
-									target='_blank'
-									underline='none'
-									color='#fff'
-									mb={0.75}
-								>
-									Buy $Apecron
-								</Link>
+								
 								<Link
 									href='/docs/apecron.pdf'
 									target='_blank'
