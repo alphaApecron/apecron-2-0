@@ -131,7 +131,7 @@ const About = () => {
 											fontWeight='900'
 											mb={0.5}
 										>
-											2% on cro and 4% on eth for Development
+											2% on cro and 2% on eth for Development
 										</Typography>
 										<Typography
 											variant='p'
@@ -182,13 +182,7 @@ const About = () => {
 										</Typography>
 									</Grid>
 								</Grid>
-
-								<Grid
-									item
-									className={styles['about-item']}
-									pt={0}
-									mt={0}
-									xs={4}
+  
 									display='flex'
 									flexDirection='row'
 								>
