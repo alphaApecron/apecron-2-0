@@ -182,7 +182,12 @@ const About = () => {
 										</Typography>
 									</Grid>
 								</Grid>
-  
+  									<Grid
+									item
+									className={styles['about-item']}
+									pt={0}
+									mt={0}
+									xs={4}
 									display='flex'
 									flexDirection='row'
 								>
