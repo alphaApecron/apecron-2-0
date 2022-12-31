@@ -92,7 +92,7 @@ const About = () => {
 										marginBottom: 2,
 									}}
 								>
-									Low tax to give you more for your money!
+									9% tax on CRO and 6% tax on ETH
 								</Typography>
 							</Grid>
 
@@ -131,7 +131,7 @@ const About = () => {
 											fontWeight='900'
 											mb={0.5}
 										>
-											2% for Development
+											2% on cro and 4% on eth for Development
 										</Typography>
 										<Typography
 											variant='p'
@@ -157,7 +157,7 @@ const About = () => {
 										<Image
 											src={MarketingIcon}
 											width='60'
-											alt='2% of transaction fee goes to marketing'
+											alt='2% on cro and 4% of transaction fee goes to marketing'
 										/>
 									</Grid>
 									<Grid item xs={8}>
@@ -169,7 +169,7 @@ const About = () => {
 											fontWeight='900'
 											mb={0.5}
 										>
-											2% for Marketing
+											2% on cro and 4% on eth for Marketing
 										</Typography>
 										<Typography
 											variant='p'
@@ -177,7 +177,7 @@ const About = () => {
 											fontSize={{ xs: 14, md: 16 }}
 										>
 											To further expand and reach more
-											users, 2% is set aside for marketing
+											users, 2% on cro and 4% is set aside for marketing
 											efforts.
 										</Typography>
 									</Grid>
@@ -196,7 +196,7 @@ const About = () => {
 										<Image
 											src={LPIcon}
 											width='60'
-											alt='5% of transaction fee goes to liquidity'
+											alt='5% of transaction fee goes to liquidity on cro'
 										/>
 									</Grid>
 									<Grid item xs={8}>
