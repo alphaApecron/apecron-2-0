@@ -145,7 +145,32 @@ const Masthead = () => {
 											},
 										}}
 									>
-										Buy $Apecron
+										Buy $Apecron on CRO
+									</Button>
+<Button
+										className='btn-secondary'
+										variant='outlined'
+										href='https://app.uniswap.org/#/swap?outputCurrency=0x0a11ee015aed07eb1f4b78f88c8d68056f404c37'
+										component='a'
+										target='_blank'
+										display='inline-block'
+										sx={{
+											width: {
+												xs: '100%',
+												md: 'fit-content',
+											},
+											color: '#fff',
+											borderColor: '#fff',
+											transition: 'all 0.3s ease',
+											display: 'inline-block',
+											':hover': {
+												color: 'rgba(255,255,255,0.7)',
+												borderColor:
+													'rgba(255,255,255,0.7)',
+											},
+										}}
+									>
+										Buy $Apecron on ETH
 									</Button>
 								</Box>
 								<Box
