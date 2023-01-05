@@ -92,7 +92,7 @@ const About = () => {
 										marginBottom: 2,
 									}}
 								>
-									9% tax on CRO and 6% tax on ETH
+									9% tax on CRO and 4% tax on ETH
 								</Typography>
 							</Grid>
 
@@ -157,7 +157,7 @@ const About = () => {
 										<Image
 											src={MarketingIcon}
 											width='60'
-											alt='2% on cro and 4% of transaction fee goes to marketing'
+											alt='2% of transaction fee goes to marketing'
 										/>
 									</Grid>
 									<Grid item xs={8}>
@@ -169,7 +169,7 @@ const About = () => {
 											fontWeight='900'
 											mb={0.5}
 										>
-											2% on cro and 4% on eth for Marketing
+											2% on cro and 2% on eth for Marketing
 										</Typography>
 										<Typography
 											variant='p'
