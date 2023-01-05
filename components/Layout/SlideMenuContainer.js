@@ -114,15 +114,7 @@ const SlideMenuContainer = (props) => {
 							Audit
 						</Link>
 					</Box>
-					<Box className={styles['nav-item']} display='inline-block'>
-						<Link
-							href='https://mm.finance/swap?inputCurrency=0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23&outputCurrency=0x09aae6c66bc670016801e34d19b1775b038b6c43'
-							target='_blank'
-							underline='none'
-						>
-							Buy Now
-						</Link>
-					</Box>
+					
 				</Box>
 				<Grid
 					container
@@ -228,10 +220,26 @@ const SlideMenuContainer = (props) => {
 						mt={3}
 						mb={1}
 					>
-						Contract Address:
+						Contract Address on CRO:
 					</Typography>
 					<Typography variant='p' component='p' fontSize={{ xs: 14 }}>
 						0x09Aae6c66BC670016801e34d19B1775b038B6C43
+					</Typography>
+				</Box>
+					<Box>
+					<Typography
+						variant='p'
+						component='p'
+						fontSize={{ xs: 16 }}
+						color='#fff'
+						fontWeight='600'
+						mt={3}
+						mb={1}
+					>
+						Contract Address on ETH:
+					</Typography>
+					<Typography variant='p' component='p' fontSize={{ xs: 14 }}>
+						0x0A11ee015aed07eB1f4b78f88c8d68056f404c37
 					</Typography>
 				</Box>
 				<Box position='absolute' top='10px' right='10px'>
