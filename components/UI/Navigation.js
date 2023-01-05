@@ -39,7 +39,9 @@ const Navigation = (props) => {
 				>
 					<Typography variant='p' component='p' fontSize={{ xs: 10 }}>
 						Contract Address on CRO:
-						0x09Aae6c66BC670016801e34d19B1775b038B6C43 < /br>
+						0x09Aae6c66BC670016801e34d19B1775b038B6C43
+					</Typography>
+					<Typography variant='p' component='p' fontSize={{ xs: 10 }}>
 						Contract Address on ETH:
 						0x0A11ee015aed07eB1f4b78f88c8d68056f404c37
 					</Typography>
