@@ -54,10 +54,10 @@ const Platform = () => {
 							lineHeight={{ xs: 1.5, md: 1.5 }}
 							mb={{ xs: 1, md: 3 }}
 						>
-							The main hub of the Apecron platform is the
+							Apecron platform is the
 							portfolio management app. With its sleek and modern
 							interface, easily track and trade any tokens in your
-							wallet, or search for any token on the CRO network.
+							wallet, or search for any token.
 							Details matter! From the Apecron project scam
 							rating, upvotes and project descriptions, users can
 							make an informed decision about a potential
